@@ -23,6 +23,7 @@
     "@anthropic-ai/sdk": "^0.70.1",
     "@clerk/nextjs": "^6.35.4",
     "@prisma/client": "^7.0.0",
+    "@tailwindcss/postcss": "^4.1.17",
     "@types/node": "^24.10.1",
     "@types/react": "^19.2.6",
     "@types/react-dom": "^19.2.3",

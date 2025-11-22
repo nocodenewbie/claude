@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Upload, Download, Plus, Search } from "lucide-react";
+import { Upload, Download, Plus, Search, Package } from "lucide-react";
 
 export default function ProductsPage() {
   const [products, setProducts] = useState([]);
