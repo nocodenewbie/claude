@@ -1,0 +1,143 @@
+// Prisma Schema for ProfitMax AI
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// User model (managed by Clerk, this is just for relations)
+model User {
+  id        String   @id @default(cuid())
+  clerkId   String   @unique
+  email     String   @unique
+  name      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relations
+  products          Product[]
+  negotiationRules  NegotiationRule[]
+  quotes            Quote[]
+  widgetSettings    WidgetSettings?
+
+  @@map("users")
+}
+
+// Product model
+model Product {
+  id          String   @id @default(cuid())
+  userId      String
+  name        String
+  description String?
+  sku         String?
+  category    String?
+  costPrice   Float
+  sellPrice   Float
+  unit        String   @default("un")
+  stock       Int?
+  active      Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // Relations
+  user       User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  quoteItems QuoteItem[]
+
+  @@index([userId])
+  @@index([category])
+  @@index([active])
+  @@map("products")
+}
+
+// Negotiation Rules
+model NegotiationRule {
+  id          String   @id @default(cuid())
+  userId      String
+  name        String
+  type        String   // "volume", "category", "client"
+  conditions  Json     // Flexible JSON for various conditions
+  minMargin   Float    // Minimum profit margin %
+  maxDiscount Float    // Maximum discount %
+  active      Boolean  @default(true)
+  priority    Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // Relations
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([type])
+  @@index([active])
+  @@map("negotiation_rules")
+}
+
+// Widget Settings
+model WidgetSettings {
+  id                String   @id @default(cuid())
+  userId            String   @unique
+  widgetCode        String   @unique @default(cuid())
+  companyName       String
+  primaryColor      String   @default("#FF6B35")
+  welcomeMessage    String   @default("Olá! Bem-vindo. Sou o Max, seu assistente virtual. Será um prazer ajudá-lo com seu pedido. Quais produtos você precisa hoje?")
+  maxPersonality    String   @default("friendly") // "friendly", "professional", "casual"
+  active            Boolean  @default(true)
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  // Relations
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("widget_settings")
+}
+
+// Quote model (order/request from customer)
+model Quote {
+  id             String   @id @default(cuid())
+  userId         String
+  customerName   String?
+  customerEmail  String?
+  customerPhone  String?
+  status         String   @default("pending") // "pending", "processing", "completed", "cancelled"
+  totalAmount    Float
+  discountAmount Float    @default(0)
+  finalAmount    Float
+  notes          String?
+  conversationLog Json?   // Store the conversation with Max
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  // Relations
+  user       User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  quoteItems QuoteItem[]
+
+  @@index([userId])
+  @@index([status])
+  @@index([createdAt])
+  @@map("quotes")
+}
+
+// Quote Items
+model QuoteItem {
+  id            String  @id @default(cuid())
+  quoteId       String
+  productId     String
+  productName   String  // Denormalized for history
+  quantity      Float
+  unitPrice     Float
+  discount      Float   @default(0)
+  subtotal      Float
+  createdAt     DateTime @default(now())
+
+  // Relations
+  quote   Quote   @relation(fields: [quoteId], references: [id], onDelete: Cascade)
+  product Product @relation(fields: [productId], references: [id])
+
+  @@index([quoteId])
+  @@index([productId])
+  @@map("quote_items")
+}
