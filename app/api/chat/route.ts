@@ -1,48 +1,16 @@
 import { NextRequest, NextResponse } from "next/server";
 import Anthropic from "@anthropic-ai/sdk";
+import { QuoteExtractor } from "@/lib/services/quote-extractor";
+import { NegotiationEngine } from "@/lib/services/negotiation-engine";
+import { buildSystemPrompt } from "@/lib/services/prompt-builder";
 
 const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
 });
 
-// Max's system prompt - defines his personality and behavior
-const MAX_SYSTEM_PROMPT = `Você é o Max, um assistente virtual de vendas B2B especializado em distribuição e atacado.
-
-PERSONALIDADE:
-- Você é amigável, profissional e sempre pronto para ajudar
-- Use gírias brasileiras como "chefe", "parceiro", "amigo" de forma natural
-- Seja entusiasta sobre ofertas e descontos
-- Mantenha um tom conversacional como um vendedor experiente
-
-SUAS RESPONSABILIDADES:
-1. Receber pedidos de clientes de forma conversacional
-2. Sugerir produtos complementares (cross-sell)
-3. Oferecer descontos estratégicos quando apropriado
-4. Registrar pedidos completos com quantidades e especificações
-5. Confirmar detalhes antes de finalizar
-
-REGRAS IMPORTANTES:
-- Sempre pergunte o nome do cliente no início da conversa
-- Confirme quantidades e produtos antes de finalizar o pedido
-- Ofereça descontos apenas para pedidos de volume significativo
-- Seja honesto sobre disponibilidade e prazos
-- Mantenha o foco em concluir a venda
-
-ESTILO DE COMUNICAÇÃO:
-- Use frases curtas e diretas
-- Faça perguntas claras
-- Demonstre entusiasmo com emojis quando apropriado 👍 ✅
-- Sempre termine mensagens com uma pergunta ou call-to-action
-
-EXEMPLO DE CONVERSA:
-Cliente: "Preciso de arroz"
-Max: "Beleza, chefe! Temos arroz tipo 1 e tipo 2. Qual você prefere? E qual seria a quantidade que você tá precisando?"
-
-Lembre-se: Você está aqui para FECHAR VENDAS e MAXIMIZAR O TICKET MÉDIO, sempre mantendo o cliente satisfeito!`;
-
 export async function POST(req: NextRequest) {
   try {
-    const { messages } = await req.json();
+    const { messages, userId } = await req.json();
 
     if (!process.env.ANTHROPIC_API_KEY) {
       return NextResponse.json(
@@ -61,11 +29,14 @@ export async function POST(req: NextRequest) {
       content: msg.content,
     }));
 
+    // Build context-aware system prompt with product catalog
+    const systemPrompt = await buildSystemPrompt(userId);
+
     // Call Anthropic Claude API
     const response = await anthropic.messages.create({
       model: "claude-3-5-sonnet-20241022",
       max_tokens: 1024,
-      system: MAX_SYSTEM_PROMPT,
+      system: systemPrompt,
       messages: formattedMessages,
     });
 
@@ -73,9 +44,49 @@ export async function POST(req: NextRequest) {
     const messageText =
       assistantMessage.type === "text" ? assistantMessage.text : "";
 
-    // TODO: Extract product orders and save to database
-    // TODO: Check negotiation rules and apply discounts
-    // TODO: Calculate totals and margins
+    // Extract quote information from conversation (if userId provided)
+    let quoteData = null;
+
+    if (userId) {
+      try {
+        const extractor = new QuoteExtractor(userId);
+
+        // Add Max's response to the conversation for extraction
+        const fullConversation = [
+          ...messages,
+          { role: "assistant", content: messageText },
+        ];
+
+        // Extract quote information
+        const extracted = await extractor.extractFromConversation(fullConversation);
+
+        if (extracted.products.length > 0) {
+          // Match products to database
+          const matchedProducts = await extractor.matchProducts(extracted.products);
+
+          if (matchedProducts.length > 0) {
+            // Calculate negotiated prices
+            const engine = new NegotiationEngine(userId);
+            const negotiation = await engine.calculateQuote(
+              matchedProducts.map((m) => ({
+                productId: m.productId,
+                quantity: m.quantity,
+              }))
+            );
+
+            quoteData = {
+              extracted,
+              matchedProducts,
+              negotiation,
+              isReady: extractor.isReadyForQuote(extracted),
+            };
+          }
+        }
+      } catch (error) {
+        console.error("Quote processing error:", error);
+        // Don't fail the whole request if quote extraction fails
+      }
+    }
 
     return NextResponse.json({
       message: messageText,
@@ -83,6 +94,7 @@ export async function POST(req: NextRequest) {
         model: response.model,
         usage: response.usage,
       },
+      quoteData,
     });
   } catch (error: any) {
     console.error("Chat API error:", error);

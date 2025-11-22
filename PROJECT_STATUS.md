@@ -62,6 +62,8 @@
 - ✅ B2B sales-focused conversations
 - ✅ Brazilian Portuguese with casual phrases
 - ✅ Error handling and fallbacks
+- ✅ Dynamic product catalog awareness
+- ✅ Context-aware system prompts
 
 #### 9. **Orders Dashboard** (`/admin/quotes`)
 - ✅ Order list view
@@ -71,32 +73,39 @@
 - ✅ Order details view
 - ✅ PDF export functionality
 
+#### 10. **Negotiation Engine** (`lib/services/negotiation-engine.ts`)
+- ✅ Discount calculation based on volume and category
+- ✅ Apply multiple negotiation rules with priorities
+- ✅ Margin protection (never sell below minimum)
+- ✅ Calculate discounts respecting max discount limits
+- ✅ Support for discount ranges (tiered pricing)
+- ✅ Average margin calculation across orders
+
+#### 11. **Quote Capture System** (`lib/services/quote-extractor.ts`)
+- ✅ AI-powered conversation analysis
+- ✅ Extract customer information (name, email, phone)
+- ✅ Parse product names and quantities from natural language
+- ✅ Fuzzy product matching to database
+- ✅ Confidence scoring for matches
+- ✅ Detect when quote is ready to finalize
+
+#### 12. **Complete API Layer**
+- ✅ `/api/products` - GET with filtering, search, pagination
+- ✅ `/api/products/upload` - POST for CSV bulk import
+- ✅ `/api/rules` - GET/POST for negotiation rules
+- ✅ `/api/widget/settings` - GET/POST for widget configuration
+- ✅ `/api/quotes` - GET/POST with statistics
+- ✅ `/api/quotes/[id]` - GET individual quote details
+- ✅ `/api/chat` - POST with integrated quote extraction & negotiation
+- ✅ `/api/chat/finalize` - POST to save finalized quotes
+
 ---
 
 ## 🚧 Remaining Tasks
 
 ### High Priority
 
-1. **API Routes to Complete**
-   - [ ] `/api/products` - GET endpoint to list products
-   - [ ] `/api/rules` - POST/GET for negotiation rules
-   - [ ] `/api/widget/settings` - POST/GET for widget config
-   - [ ] `/api/quotes` - GET endpoint to list quotes
-
-2. **Negotiation Engine**
-   - [ ] Implement discount calculation logic
-   - [ ] Apply rules based on volume/category
-   - [ ] Margin protection (never go below minimum)
-   - [ ] Integrate with chat API
-
-3. **Quote Capture System**
-   - [ ] Extract products from conversation
-   - [ ] Parse quantities and specifications
-   - [ ] Calculate totals with discounts
-   - [ ] Save to database
-   - [ ] Associate with user/widget
-
-4. **Email Notifications** (Resend)
+1. **Email Notifications** (Resend)
    - [ ] Send order confirmation to customer
    - [ ] Notify admin of new orders
    - [ ] PDF quote attachment
@@ -198,7 +207,7 @@ Visit: http://localhost:3000
 
 ## 📊 Progress Summary
 
-**Overall Progress: ~70% Complete**
+**Overall Progress: ~90% Complete**
 
 | Component | Status | Progress |
 |-----------|--------|----------|
@@ -206,14 +215,15 @@ Visit: http://localhost:3000
 | Database Schema | ✅ Done | 100% |
 | Authentication | ✅ Done | 100% |
 | Admin Layout | ✅ Done | 100% |
-| Product Management | ✅ Done | 80% |
-| Negotiation Rules | ✅ Done | 70% |
-| Widget Config | ✅ Done | 90% |
-| Max Chat Widget | ✅ Done | 90% |
-| AI Integration | ✅ Done | 80% |
-| Order Management | ✅ Done | 60% |
-| Negotiation Engine | ⏳ TODO | 0% |
-| Quote Capture | ⏳ TODO | 0% |
+| Product Management | ✅ Done | 100% |
+| Negotiation Rules | ✅ Done | 100% |
+| Widget Config | ✅ Done | 100% |
+| Max Chat Widget | ✅ Done | 100% |
+| AI Integration | ✅ Done | 100% |
+| Order Management | ✅ Done | 100% |
+| **Negotiation Engine** | ✅ Done | **100%** |
+| **Quote Capture** | ✅ Done | **100%** |
+| **Complete API Layer** | ✅ Done | **100%** |
 | Email System | ⏳ TODO | 0% |
 | Analytics | ⏳ TODO | 0% |
 
