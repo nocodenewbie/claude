@@ -1,0 +1,175 @@
+x;line-height:1.4;color:rgba(255,255,255,.72)}
+    .toc a:before{content:counter(toc,decimal-leading-zero);font-family:var(--display);color:var(--turq)}
+    .toc a:hover{color:#fff}
+    .article-body{font-size:19px;line-height:1.82;min-width:0}
+    .article-body>p:first-of-type{font-size:23px;line-height:1.62;color:#26315E}
+    .article-body h2{font:700 clamp(30px,3.2vw,45px)/1.14 var(--display);letter-spacing:-.04em;margin:72px 0 20px;scroll-margin-top:28px}
+    .article-body h3{font:700 23px/1.25 var(--display);margin:38px 0 14px}
+    .article-body p{margin:0 0 25px}
+    .article-body ul,.article-body ol{padding-left:24px;margin:0 0 28px}
+    .article-body li{margin-bottom:10px}
+    .article-body strong{font-weight:700;color:#0F1C54}
+    .callout{border-left:4px solid var(--turq);padding:7px 0 7px 24px;margin:40px 0;font:600 25px/1.42 var(--display);letter-spacing:-.02em;color:var(--night)}
+    .article-body .formula{background:#E9EEFF;border-top:3px solid var(--blue);padding:25px 28px;margin:36px 0;font:600 18px/1.65 var(--display)}
+    .sources{margin-top:74px;padding-top:30px;border-top:1px solid #CCD5F6;font-size:14px;line-height:1.55}
+    .sources h2{font-size:23px;margin:0 0 16px}
+    .sources li{margin-bottom:9px}
+    .sources a{color:var(--blue);text-decoration:underline;text-underline-offset:3px}
+    .aside-note{position:sticky;top:38px;font-size:13px;line-height:1.55;color:#53608F;border-top:3px solid var(--turq);padding-top:16px}
+    .aside-note strong{display:block;color:var(--ink);font-family:var(--display);margin-bottom:7px}
+    .related{background:#E8EDFF;padding:80px 44px;color:var(--ink)}
+    .related-inner{max-width:1100px;margin:auto}
+    .related h2{font:700 40px/1.15 var(--display);letter-spacing:-.04em;margin:0 0 30px}
+    .related-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    .related-card{border-top:2px solid var(--blue);padding:20px 0;display:grid;grid-template-columns:45px 1fr;gap:15px}
+    .related-card span{color:var(--blue);font:700 20px/1 var(--display)}
+    .related-card h3{font:600 22px/1.3 var(--display);margin:0}
+
+    @media(max-width:1100px){
+      :root{--rail:250px}
+      .site-header{padding-left:28px}
+      .hero{padding-left:28px;padding-right:calc(var(--rail) + 35px)}
+      .library,.about,.site-footer{padding-left:28px;padding-right:calc(var(--rail) + 28px)}
+      .reading-layout{grid-template-columns:220px minmax(0,1fr);gap:42px}
+      .aside-note{display:none}
+    }
+    @media(max-width:820px){
+      :root{--rail:0px}
+      .site-header{position:absolute!important;right:0;padding:0 20px;height:72px}
+      .nav{position:fixed;inset:0 0 auto 0;background:var(--night);padding:94px 25px 30px;display:none;flex-direction:column;align-items:flex-start;z-index:-1}
+      .nav.open{display:flex}
+      .menu-btn{display:block}
+      .edition-rail{display:none}
+      .hero{min-height:650px;padding:126px 20px 72px}
+      .hero h1{font-size:clamp(44px,13.5vw,70px)}
+      .hero-dek{padding-left:18px}
+      .route-art{inset:220px -160px 0 30%}
+      .library{padding:52px 20px 75px}
+      .section-head{display:block}
+      .section-head p{margin-top:18px}
+      .story,.story.featured{grid-template-columns:52px 1fr 22px;gap:12px}
+      .story-summary{display:none}
+      .about{padding:75px 20px;display:block}
+      .about-copy{margin-top:32px;font-size:18px}
+      .site-footer{padding:28px 20px;display:block}
+      .site-footer span{display:block;margin:6px 0}
+      .article-hero{padding:116px 20px 60px;min-height:auto}
+      .article-hero h1{font-size:clamp(40px,11vw,65px)}
+      .article-route{right:-45%;width:100%;opacity:.22}
+      .byline{align-items:flex-start;flex-direction:column;gap:8px}
+      .byline span+span{border:0;padding:0}
+      .reading-layout{display:block;padding:48px 20px 75px}
+      .toc{position:relative;top:0;margin-bottom:45px}
+      .article-body{font-size:18px}
+      .article-body>p:first-of-type{font-size:21px}
+      .article-body h2{margin-top:58px}
+      .callout{font-size:22px}
+      .related{padding:58px 20px}
+      .related-grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Pular para o conteúdo</a>
+  <div class="progress" id="progress"></div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="WMW Systems — início">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>WMW Systems</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav" aria-label="Navegação principal">
+      <a href="#inicio">Visão geral</a>
+      <a href="#artigos">Artigos</a>
+      <a href="#hub360">Sobre o Hub 360</a>
+      <a class="cta" href="#hub360">Conheça o Hub 360 →</a>
+    </nav>
+  </header>
+
+  <main class="home" id="main">
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <div class="kicker">WMW / Inteligência para canais indiretos</div>
+        <h1>A estratégia da indústria, em movimento no canal.</h1>
+        <p class="hero-dek">Análises sobre força de vendas, distribuidores, sell-out, incentivos e IA — a partir de onde as decisões realmente acontecem.</p>
+      </div>
+      <div class="route-art" aria-hidden="true">
+        <svg viewBox="0 0 900 650" preserveAspectRatio="xMidYMid slice">
+          <path class="topo" d="M-40 180C90 65 216 89 293 168s175 92 262-9 219-116 373-8"/><path class="topo" d="M-40 218C86 104 212 126 282 202s170 88 257-10 225-110 389-7"/><path class="topo" d="M-40 256C76 148 201 166 275 239s166 84 252-11 234-102 401 0"/><path class="topo" d="M-40 294C68 194 191 205 267 278s162 80 247-13 238-89 414 14"/><path class="topo" d="M-40 332C58 238 182 245 258 315s157 79 243-10 248-80 427 24"/><path class="topo" d="M-40 370C49 282 170 285 250 354s153 75 238-8 256-71 440 34"/>
+          <path class="route-ghost" d="M-10 130C160 89 178 310 349 266s211-36 269 83 174 90 285 17"/>
+          <path class="route" d="M55 556C154 496 174 534 252 445s42-183 159-172 93 92 200 77 87-155 241-180"/>
+          <g fill="#25CEC6"><circle cx="55" cy="556" r="8"/><circle cx="252" cy="445" r="11"/><circle cx="411" cy="273" r="8"/><circle cx="611" cy="350" r="12"/><circle cx="852" cy="170" r="9"/></g>
+          <g fill="#fff"><circle cx="174" cy="512" r="5"/><circle cx="510" cy="339" r="5"/><circle cx="728" cy="272" r="6"/></g>
+        </svg>
+      </div>
+    </section>
+
+    <aside class="edition-rail" aria-label="Índice da edição">
+      <div class="rail-top"><span class="rail-label">Nesta edição</span><span class="rail-count">10 análises</span></div>
+      <ol class="rail-items" id="railItems"></ol>
+      <div class="rail-foot">Hub 360 · Série editorial 2026</div>
+    </aside>
+
+    <section class="library" id="artigos">
+      <div class="section-head">
+        <h2>Leituras para quem precisa fazer o canal responder</h2>
+        <p>Dez perspectivas conectadas: da agenda do vendedor à qualidade do sell-out, da campanha isolada a uma operação que aprende.</p>
+      </div>
+      <div class="tools">
+        <label class="search" for="searchInput">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+          <input id="searchInput" type="search" placeholder="Buscar por tema ou palavra-chave" autocomplete="off">
+        </label>
+        <button class="filter-toggle" id="filterToggle" aria-controls="filters" aria-expanded="true">Filtrar por ≡</button>
+      </div>
+      <div class="filters" id="filters"></div>
+      <div class="article-list" id="articleList"></div>
+    </section>
+
+    <section class="about" id="hub360">
+      <div>
+        <div class="kicker">O conceito Hub 360</div>
+        <h2>O canal como um sistema vivo.</h2>
+      </div>
+      <div class="about-copy">
+        <p>O Hub 360 conecta a base operacional da força de vendas à capacidade da indústria de orientar mix, campanhas e execução. A recomendação chega no fluxo de trabalho do vendedor; o retorno do campo volta como aprendizado.</p>
+        <p>É uma visão de produto para aproximar intenção, distribuição e decisão de compra — com dados, contexto e uma próxima ação que faça sentido para cada cliente.</p>
+        <a class="dark-btn" href="https://www.wmw.com.br/" target="_blank" rel="noopener">Conversar com a WMW <span>↗</span></a>
+      </div>
+    </section>
+    <footer class="site-footer"><span>© 2026 WMW Systems</span><span>Hub 360 · Inteligência para canais indiretos</span><span>Pesquisa editorial realizada em 04 ago 2026</span></footer>
+  </main>
+
+  <main class="reader" id="reader" aria-live="polite">
+    <section class="article-hero">
+      <div class="article-hero-inner">
+        <a class="back" href="#artigos">← Todos os artigos</a>
+        <div class="meta" id="readerMeta"></div>
+        <h1 id="readerTitle"></h1>
+        <p class="article-dek" id="readerDek"></p>
+        <div class="byline"><span>WMW Systems · Hub 360</span><span>04 ago 2026</span></div>
+      </div>
+      <div class="article-route" aria-hidden="true">
+        <svg viewBox="0 0 700 500"><path class="topo" d="M8 95C149 13 263 63 317 157s145 102 218 19 113-86 199-35"/><path class="topo" d="M8 132C143 51 251 97 309 190s144 98 219 17 118-79 205-25"/><path class="topo" d="M8 169C137 91 244 131 301 224s144 94 219 14 126-67 214-1"/><path class="route" d="M45 76C91 176 207 106 250 212s-28 163 113 173 157-71 275 8"/><circle cx="45" cy="76" r="9" fill="#25CEC6"/><circle cx="250" cy="212" r="10" fill="#25CEC6"/><circle cx="363" cy="385" r="8" fill="#fff"/><circle cx="638" cy="393" r="10" fill="#25CEC6"/></svg>
+      </div>
+    </section>
+    <div class="reading-layout">
+      <nav class="toc" aria-label="Neste artigo"><div class="toc-title">Neste artigo</div><ol id="tocList"></ol></nav>
+      <article class="article-body" id="articleBody"></article>
+      <aside class="aside-note"><strong>Série Hub 360</strong>Uma leitura integrada da venda indireta: pessoas, sistemas, dados e decisão no mesmo desenho operacional.</aside>
+    </div>
+    <section class="related"><div class="related-inner"><h2>Continue a leitura</h2><div class="related-grid" id="relatedGrid"></div></div></section>
+  </main>
+
+  <script>
+    const articles = [
+      {
+        n:1,
+        slug:'vendedor-distribuidor-decide-canal-indireto',
+        category:'Estratégia do canal',
+        read:9,
+        keywords:'gestão de canal indireto vendedor do distribuidor influência execução comercial indústria distribuição mix atenção',
+        title:'Quem decide o que ganha espaço no canal indireto? O vendedor do distribuidor',
+        dek:'A indústria pode definir campanhas, metas e mix. Na ponta, alguém ainda precisa escolher qual cliente visitar, qual produto apresentar e qual argumento usar.',
+        body:`
+          <p>Uma estratégia de canal pode estar bem desenhada no escritório da indústria e ainda chegar fraca ao mercad

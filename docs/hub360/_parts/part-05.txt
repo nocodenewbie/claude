@@ -1,0 +1,80 @@
+strong>Latência</strong> mostra a distância entre a venda e a disponibilidade para análise. <strong>Consistência</strong> resume reconciliação, duplicidades, campos obrigatórios e anomalias.</p>
+          <p>Esses atributos podem formar uma faixa de confiança por distribuidor, período e métrica. A ideia não é esconder dados incompletos. É evitar que uma visão parcial seja tratada como fotografia integral do mercado. Uma recomendação baseada em baixa cobertura pode continuar útil, desde que carregue a ressalva e use limites mais conservadores.</p>
+          <p>O tratamento de exceções também precisa de prioridade. Uma diferença pequena em um item de baixo giro não merece a mesma atenção que uma quebra relevante no principal produto da campanha. Regras de materialidade protegem a equipe de uma fila interminável de alertas técnicos.</p>
+
+          <h2>Do registro bruto ao sinal acionável</h2>
+          <p>Após padronização e reconciliação, o dado ganha contexto. Uma venda isolada se torna frequência de compra. A sequência de itens vira perfil de mix. A ausência de transação, combinada ao comportamento anterior, vira risco de perda. O estoque ligado à saída forma dias de cobertura. A comparação entre lojas semelhantes revela espaço de distribuição.</p>
+          <p>O passo seguinte é transformar o sinal em uma ação com dono. Aumento de intervalo de recompra pode entrar na agenda do representante. Estoque alto com boa aderência pode orientar uma missão de giro. Produto estratégico ausente em clientes comparáveis pode gerar uma recomendação de mix. Queda generalizada após uma mudança de preço exige análise da gestão, não dez tarefas iguais para o campo.</p>
+
+          <h2>Uma operação de dados que melhora com o uso</h2>
+          <p>Projetos de sell-out frequentemente são tratados como integração com data de encerramento. A realidade pede uma operação contínua. Novos SKUs entram, distribuidores trocam ERP, cadastros mudam e regras comerciais evoluem. Monitoramento, fila de exceções e acordos de correção fazem parte do produto.</p>
+          <p>O retorno do campo ajuda a validar a leitura. Se o sistema indica que um cliente parou de comprar e o vendedor informa que a loja encerrou atividades, o cadastro melhora. Se uma recomendação é recusada por embalagem incompatível, o modelo de similaridade aprende. O Hub 360 usa esse circuito para aproximar dado recebido, interpretação e execução. O arquivo deixa de ser o ponto final e passa a ser matéria-prima de uma decisão rastreável.</p>
+
+          <section class="sources"><h2>Leituras e fontes</h2><ul>
+            <li><a href="https://www.modeln.com/wp-content/uploads/2019/01/ebk_best_practices_for_channel_data_management.pdf" target="_blank" rel="noopener">Model N — Best Practices for Channel Data Management</a></li>
+            <li><a href="https://www.e2open.com/intelligent-applications/channel/collaborative-channel/" target="_blank" rel="noopener">e2open — Collaborative Channel</a></li>
+            <li><a href="https://neogrid.com/gestao-do-canal-indireto-beneficios-para-industria-e-distribuidor/" target="_blank" rel="noopener">Neogrid — Gestão do canal indireto</a></li>
+          </ul></section>`
+      },
+      {
+        n:5,
+        slug:'pontuacao-produtos-estrategia-prioridade-venda',
+        category:'Incentivos & execução',
+        read:9,
+        keywords:'pontuação produtos recomendação mix prioridade venda score incentivo canal indireto margem estoque probabilidade',
+        title:'Pontuação de produtos: como transformar estratégia em prioridade de venda',
+        dek:'Um score pode organizar milhares de combinações entre produto, cliente e momento. Para funcionar no campo, precisa equilibrar oportunidade, valor e risco — e explicar o motivo.',
+        body:`
+          <p>“Priorizar o lançamento” parece uma orientação simples até chegar à carteira de um representante. Em quais clientes? Antes ou depois da reposição dos itens líderes? Com qual condição? E o que acontece quando o distribuidor tem estoque elevado de outro produto que também precisa girar? A pontuação transforma essas tensões em uma ordem de trabalho comparável.</p>
+
+          <h2>O objeto certo é produto, cliente e momento</h2>
+          <p>Um ranking geral de produtos reproduz a prioridade da indústria, mas ignora a chance de resposta de cada cliente. Um ranking apenas por histórico tende a recomendar o que o comprador já leva e empobrece a expansão de mix. O objeto útil combina produto, cliente e janela de tempo.</p>
+          <p>Essa combinação permite que o mesmo SKU apareça no topo para uma loja e no fim para outra. Também deixa a prioridade mudar quando entra uma campanha, o estoque se aproxima da ruptura, a margem cai ou o cliente recompra. O score passa a refletir o presente, em vez de congelar uma segmentação feita meses atrás.</p>
+
+          <h2>Os componentes de uma pontuação equilibrada</h2>
+          <p>Cada operação define pesos próprios, mas a estrutura costuma reunir cinco grupos:</p>
+          <ul>
+            <li><strong>Prioridade estratégica:</strong> lançamento, distribuição desejada, marca foco ou acordo comercial.</li>
+            <li><strong>Aderência ao cliente:</strong> segmento, porte, cesta, frequência e comportamento de lojas semelhantes.</li>
+            <li><strong>Condição do distribuidor:</strong> estoque, margem, cobertura, restrições e capacidade de entrega.</li>
+            <li><strong>Momento:</strong> sazonalidade, intervalo de recompra, campanha ativa e eventos locais.</li>
+            <li><strong>Risco:</strong> excesso de cobertura, baixa probabilidade, conflito de preço ou histórico de devolução.</li>
+          </ul>
+          <div class="formula">Score = prioridade estratégica + aderência + oportunidade de estoque + valor econômico + momento − riscos</div>
+          <p>A fórmula serve como linguagem de alinhamento. Ela obriga indústria e distribuidor a explicitar o que valorizam e quais limites protegem a operação. Os pesos podem variar por categoria, região e fase da campanha.</p>
+
+          <h2>Explicação aumenta a confiança</h2>
+          <p>O vendedor não precisa ver uma equação, mas precisa entender o resultado. “Alta aderência em lojas do mesmo perfil, 42 dias sem recompra e estoque disponível” oferece base para agir. Um número 87, sozinho, pouco acrescenta.</p>
+          <p>A explicação também revela erros. O representante pode perceber que o cliente mudou de segmento, que o estoque informado não está acessível à sua filial ou que a condição perdeu validade. Com um caminho simples para registrar a correção, o sistema captura conhecimento que antes ficava em conversas dispersas.</p>
+          <div class="callout">A melhor pontuação organiza a decisão. Ela não tenta apagar a experiência de quem conhece a carteira.</div>
+
+          <h2>Score e incentivo cumprem papéis diferentes</h2>
+          <p>A pontuação indica onde há maior valor esperado. O incentivo remunera um comportamento escolhido. Misturar os dois pode distorcer a ordem. Um bônus alto faz um produto subir mesmo quando a aderência é baixa; o vendedor empurra uma oferta, o cliente compra uma vez e a recompra desaparece.</p>
+          <p>Pesquisas sobre desenho de incentivos em canais mostram que programas funcionam melhor quando se ajustam às necessidades de desempenho do revendedor. Isso pede uma visão compartilhada: o ganho da indústria precisa conversar com giro, margem e esforço do distribuidor. Limites de frequência, elegibilidade e qualidade reduzem o risco de volume artificial.</p>
+          <p>Uma abordagem prática calcula primeiro a oportunidade e depois aplica o incentivo como componente visível e limitado. Dessa forma, a campanha amplia atenção sem dominar todos os demais sinais.</p>
+
+          <h2>Como calibrar sem esperar perfeição</h2>
+          <p>O primeiro modelo pode ser baseado em regras compreensíveis. A equipe seleciona poucas variáveis com dados confiáveis, define faixas e testa em uma região ou categoria. O objetivo inicial é melhorar a ordem de prioridade, não prever cada pedido.</p>
+          <p>A calibração compara recomendados e não recomendados em condições semelhantes. Observa aceitação, conversão, margem, incremento de mix e recompra. Também acompanha efeitos indesejados: queda em itens essenciais, concentração excessiva, devolução ou aumento de estoque no cliente.</p>
+          <p>Com o tempo, modelos estatísticos podem ajustar probabilidades e pesos. As regras de negócio continuam como limites: estoque mínimo, margem, política e elegibilidade. No Hub 360, a pontuação funciona como ponte entre intenção e agenda. Ela organiza a complexidade nos bastidores e entrega ao vendedor uma próxima ação curta, justificável e possível de executar.</p>
+
+          <section class="sources"><h2>Leituras e fontes</h2><ul>
+            <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0019850103000312" target="_blank" rel="noopener">Industrial Marketing Management — Designing channel incentives to overcome reseller rejection</a></li>
+            <li><a href="https://trailhead.salesforce.com/content/learn/modules/channel-revenue-management-quick-look/enhance-channel-collaboration-with-channel-revenue-management" target="_blank" rel="noopener">Salesforce Trailhead — Channel Revenue Management</a></li>
+            <li><a href="https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2025/07/30/microsoft-named-a-leader-in-the-2025-gartner-magic-quadrant-for-sales-force-automation-platforms/" target="_blank" rel="noopener">Microsoft — IA e próxima melhor ação em vendas</a></li>
+          </ul></section>`
+      },
+      {
+        n:6,
+        slug:'ia-venda-externa-tres-realidades',
+        category:'IA & decisão',
+        read:10,
+        keywords:'inteligência artificial venda externa canal indireto recomendação próxima melhor ação indústria distribuidor cliente IA SFA',
+        title:'IA na venda externa: a recomendação só presta quando entende três realidades',
+        dek:'Uma sugestão comercial precisa conciliar a intenção da indústria, a capacidade do distribuidor e a probabilidade de compra do cliente. A IA ganha valor nesse encontro.',
+        body:`
+          <p>A inteligência artificial já resume contas, prepara visitas, sugere mensagens e identifica oportunidades. Na venda externa, a promessa é atraente porque o representante lida com muitas variáveis em pouco tempo. No canal indireto, porém, uma recomendação tecnicamente plausível pode falhar se enxergar apenas uma parte da operação.</p>
+
+          <h2>A intenção da indústria</h2>
+          <p>A indústria sabe quais marcas precisam de distribuição, quais lançamentos pedem experimentação, onde existe verba de campanha e quais categorias sustentam a estratégia. Esse contexto define valor além da probabilidade imediata de pedido.</p>
+          <p>Se o modelo olhar somente o histórico, tenderá a repetir os campeões de venda. Esse padrão pode elevar a taxa de aceitação no curto pr

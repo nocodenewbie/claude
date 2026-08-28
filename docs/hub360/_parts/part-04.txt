@@ -1,0 +1,78 @@
+de sincronização e erros evitados continuam relevantes. Para a camada de orientação, entram medidas adicionais: cobertura de oportunidades, taxa de aceitação, conversão por tipo de recomendação, incremento de mix, recuperação de clientes e persistência da recompra.</p>
+          <p>A comparação precisa considerar grupos ou períodos equivalentes. Um produto poderia vender mesmo sem recomendação; por isso, medir apenas o volume associado superestima o efeito. O objetivo é encontrar mudança incremental e aprender em quais situações o apoio altera a decisão.</p>
+          <p>O Hub 360 nasce dessa continuidade. Ele preserva o SFA como base operacional e amplia sua função: as prioridades entram no trabalho diário, a resposta do campo retorna e cada ciclo alimenta a próxima orientação. O pedido permanece como prova da execução. A inteligência começa alguns passos antes.</p>
+
+          <section class="sources"><h2>Leituras e fontes</h2><ul>
+            <li><a href="https://www.oracle.com/br/cx/sales/sales-force-automation/what-is-sfa/" target="_blank" rel="noopener">Oracle — O que é automação da força de vendas?</a></li>
+            <li><a href="https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2025/07/30/microsoft-named-a-leader-in-the-2025-gartner-magic-quadrant-for-sales-force-automation-platforms/" target="_blank" rel="noopener">Microsoft — Sales Force Automation Platforms e IA</a></li>
+            <li><a href="https://www.wmw.com.br/solucao/forca-de-vendas/" target="_blank" rel="noopener">WMW Systems — Força de vendas</a></li>
+          </ul></section>`
+      },
+      {
+        n:3,
+        slug:'sell-in-cresceu-mercado-cresceu',
+        category:'Dados & sell-out',
+        read:8,
+        keywords:'sell-in sell-out estoque canal indireto demanda giro cobertura indústria distribuidor indicadores',
+        title:'Sell-in cresceu. O mercado cresceu mesmo?',
+        dek:'A entrada de produto no distribuidor pode antecipar crescimento, repor estoque ou apenas deslocar volume no tempo. Separar essas histórias muda a qualidade da decisão.',
+        body:`
+          <p>Um fechamento forte de sell-in costuma produzir uma sensação imediata de avanço. A indústria faturou, o distribuidor recebeu e a meta do período se aproxima. O dado é real e importante. Mesmo assim, ele descreve uma transferência dentro do canal. Para saber se o mercado respondeu, é preciso acompanhar o que aconteceu depois.</p>
+
+          <h2>Três histórias cabem no mesmo número</h2>
+          <p>O aumento de sell-in pode representar reposição saudável após uma aceleração do consumo. Também pode ser formação planejada de estoque para uma sazonalidade ou expansão geográfica. Há ainda uma terceira possibilidade: o volume entrou no distribuidor mais rápido do que saiu para os clientes.</p>
+          <p>Essas situações exigem decisões diferentes. Na primeira, a prioridade pode ser ampliar cobertura e proteger disponibilidade. Na segunda, a equipe precisa acompanhar execução e calendário. Na terceira, insistir no mesmo ritmo agrava estoque, pressiona capital e cria condições para desconto excessivo no futuro.</p>
+          <p>A leitura isolada do faturamento não separa as três. A MáximaTech chama atenção para esse risco ao tratar dos indicadores do canal indireto: o sell-in pode inflar a percepção de demanda se não for comparado a giro, estoque e sell-out.</p>
+
+          <div class="callout">Sell-in mostra o compromisso do canal com o volume. Sell-out mostra a resposta do mercado. Estoque explica a distância entre os dois.</div>
+
+          <h2>Reconciliação antes de interpretação</h2>
+          <p>Antes de buscar tendências, a operação precisa fechar uma conta básica por produto, local e período:</p>
+          <div class="formula">Estoque inicial + entradas − saídas ± ajustes = estoque final</div>
+          <p>A fórmula parece simples, mas expõe os problemas que distorcem análises: unidades diferentes, kits, bonificações, devoluções, transferências entre filiais, cadastro duplicado e datas de corte incompatíveis. Quando a reconciliação falha, a tendência pode ser apenas um erro de integração.</p>
+          <p>Por isso, qualidade de dado não deve ficar restrita a uma etapa técnica. Cada painel relevante precisa indicar cobertura, latência e nível de confiança. Um número de ontem para 92% das filiais tem significado diferente de um número de quinze dias atrás para metade da rede.</p>
+
+          <h2>Os sinais que distinguem crescimento de carregamento</h2>
+          <p>A relação entre quatro curvas ajuda a construir um diagnóstico: sell-in, sell-out, estoque e cobertura de clientes. Quando sell-in e sell-out crescem, estoque se mantém em faixa saudável e mais clientes compram, há evidência consistente de expansão. Quando sell-in cresce, sell-out fica estável e estoque sobe, o canal está carregando volume. Quando sell-out cresce com estoque em queda, surge risco de ruptura e uma oportunidade de reposição.</p>
+          <p>O mix adiciona outra dimensão. O faturamento pode avançar concentrado em poucos itens, enquanto produtos estratégicos perdem distribuição. Também pode ocorrer o oposto: o valor total cresce pouco, mas a base de compradores e a presença do portfólio aumentam, preparando ciclos seguintes.</p>
+          <p>A janela temporal precisa respeitar o negócio. Produtos de alta frequência pedem acompanhamento semanal ou diário. Categorias sazonais exigem comparação com períodos equivalentes e leitura do calendário. Um único parâmetro para todo o portfólio cria falsos alertas.</p>
+
+          <h2>Da análise para a ação no campo</h2>
+          <p>A utilidade aparece quando o diagnóstico chega à equipe em formato executável. Estoque elevado de um SKU, por exemplo, não deveria gerar uma campanha nacional automática. Primeiro é preciso localizar onde está o saldo, quais clientes têm aderência, qual faixa de preço preserva margem e qual argumento melhora a chance de giro.</p>
+          <p>Da mesma forma, uma ruptura provável pode orientar reposição, priorização de entrega ou oferta de substituto. Um recuo de cobertura pode gerar uma missão para recuperar compradores inativos. Cada movimento combina a visão agregada da indústria com a realidade operacional do distribuidor.</p>
+
+          <h2>Uma cadência que evita surpresas</h2>
+          <p>A gestão funciona melhor em ritmos complementares. No acompanhamento semanal, a equipe trata exceções: ruptura, acúmulo, campanha fora da curva e falhas de envio. No ciclo mensal, revisa tendências de giro, cobertura, mix e recompra. No trimestre, indústria e distribuidor ajustam metas, sortimento, territórios e investimentos.</p>
+          <p>O Hub 360 organiza essa ligação entre leitura e execução. Sell-in, sell-out e estoque formam o contexto; a força de vendas recebe prioridades específicas; o resultado do pedido e da recompra volta para a análise. Assim, uma curva deixa de ser apenas um gráfico de fechamento e passa a orientar a próxima escolha do canal.</p>
+
+          <section class="sources"><h2>Leituras e fontes</h2><ul>
+            <li><a href="https://maximatech.com.br/kpis-da-industria-no-canal-indireto/" target="_blank" rel="noopener">MáximaTech — KPIs da indústria no canal indireto</a></li>
+            <li><a href="https://www.salesforce.com/in/sales/channel-revenue-management/" target="_blank" rel="noopener">Salesforce — Channel Revenue Management</a></li>
+            <li><a href="https://www.modeln.com/wp-content/uploads/2019/01/ebk_best_practices_for_channel_data_management.pdf" target="_blank" rel="noopener">Model N — Best Practices for Channel Data Management</a></li>
+          </ul></section>`
+      },
+      {
+        n:4,
+        slug:'dados-sell-out-arquivo-chegou-resposta-nao',
+        category:'Dados & sell-out',
+        read:9,
+        keywords:'dados sell-out qualidade integração canal data management mapeamento SKU cliente distribuidor confiança latência',
+        title:'Dados de sell-out: por que o arquivo chegou e a resposta ainda não',
+        dek:'Receber dados dos distribuidores abre a porta. Padronizar, reconciliar e transformar o registro em uma decisão confiável é o trabalho que vem depois.',
+        body:`
+          <p>Uma pasta cheia de arquivos de sell-out pode dar a impressão de que a visibilidade do canal está resolvida. O volume chegou, as colunas existem e alguns gráficos já podem ser montados. Na prática, a pergunta de negócio continua esperando: qual produto ganhou mercado, em qual cliente, com que frequência e qual ação deveria acontecer agora?</p>
+
+          <h2>Coleta é o começo da cadeia</h2>
+          <p>Distribuidores enviam dados em ritmos e formatos distintos. Alguns entregam transações diárias por item e cliente. Outros consolidam por semana, filial ou família. Nomes de colunas, unidades, códigos e regras de cancelamento mudam. O processo precisa aceitar essa diversidade sem abandonar um modelo comum.</p>
+          <p>As boas práticas de channel data management descritas pela Model N começam justamente pela coleta no formato que o parceiro consegue fornecer, seguida de validação, limpeza, correspondência de cadastros e enriquecimento. A ambição de impor um arquivo perfeito a todos costuma atrasar a cobertura. Aceitar qualquer estrutura sem regras, por outro lado, transfere a confusão para a análise.</p>
+          <p>Uma esteira sustentável registra origem, competência, data de recebimento, versão e responsável. O dado precisa ser reprocessável. Quando um distribuidor corrige o mês anterior, o sistema deve saber o que substituir e quais indicadores recalcular.</p>
+
+          <h2>O mesmo produto usa muitos nomes</h2>
+          <p>A correspondência de produtos costuma concentrar boa parte do esforço. O código da indústria raramente é idêntico ao código interno de cada distribuidor. Descrição, embalagem e unidade ajudam, mas também variam. Um item vendido em caixa com 12 pode chegar como 12 unidades; um kit pode aparecer como um SKU ou como componentes.</p>
+          <p>O mapeamento precisa combinar regras determinísticas, tabelas de equivalência e revisão das exceções. EAN, código fiscal, descrição normalizada, marca, tamanho e fator de conversão são sinais úteis. A decisão validada por uma pessoa vira uma regra reutilizável, em vez de voltar à fila todo mês.</p>
+          <p>Clientes e pontos de venda trazem outro desafio. Razão social, nome fantasia, CNPJ, endereço e grupo econômico podem divergir. Duplicidades fazem a cobertura parecer maior; agrupamentos excessivos escondem lojas distintas. A hierarquia deve preservar o detalhe operacional e, ao mesmo tempo, permitir a leitura por rede, região e segmento.</p>
+
+          <div class="callout">Um painel bonito sobre cadastros incompatíveis apenas acelera uma conclusão frágil.</div>
+
+          <h2>Qualidade precisa aparecer junto do indicador</h2>
+          <p>Três atributos ajudam o usuário a calibrar a confiança. <strong>Cobertura</strong> informa quanto do universo esperado está presente. <

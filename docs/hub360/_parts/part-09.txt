@@ -1,0 +1,32 @@
+lice(0,2);
+      document.querySelector('#relatedGrid').innerHTML = related.map(item=>`<a class="related-card" href="#artigo/${item.slug}"><span>${String(item.n).padStart(2,'0')}</span><h3>${item.title}</h3></a>`).join('');
+      document.title = `${a.title} | Hub 360 — WMW Systems`;
+      document.querySelector('meta[name="description"]').setAttribute('content',a.dek);
+      railItems.querySelectorAll('.rail-link').forEach(el=>el.classList.toggle('active',el.dataset.open===slug));
+      window.scrollTo({top:0,behavior:'instant'});
+    }
+    function showHome(target){
+      document.body.classList.remove('reading');
+      document.title='Hub 360 — Inteligência para canais indiretos | WMW Systems';
+      document.querySelector('meta[name="description"]').setAttribute('content','Análises de alto nível sobre canal indireto, força de vendas, sell-out, incentivos e inteligência artificial, por WMW Systems e Hub 360.');
+      requestAnimationFrame(()=>document.querySelector(target||'#inicio')?.scrollIntoView());
+    }
+    function route(){
+      const hash=decodeURIComponent(location.hash||'#inicio');
+      if(hash.startsWith('#artigo/')) openArticle(hash.split('/')[1]); else showHome(hash);
+    }
+    document.addEventListener('click',e=>{
+      const open=e.target.closest('[data-open]'); if(open){e.preventDefault();location.hash=`artigo/${open.dataset.open}`}
+      const filter=e.target.closest('[data-category]'); if(filter){activeCategory=filter.dataset.category;renderFilters();renderList()}
+    });
+    searchInput.addEventListener('input',renderList);
+    document.querySelector('#filterToggle').addEventListener('click',e=>{const hidden=filtersEl.hidden=!filtersEl.hidden;e.currentTarget.setAttribute('aria-expanded',String(!hidden))});
+    const menuBtn=document.querySelector('#menuBtn'), nav=document.querySelector('#nav');
+    menuBtn.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'×':'☰'});
+    nav.addEventListener('click',()=>{nav.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰'});
+    window.addEventListener('hashchange',route);
+    window.addEventListener('scroll',()=>{const max=document.documentElement.scrollHeight-innerHeight;document.querySelector('#progress').style.width=`${max>0?scrollY/max*100:0}%`});
+    renderRail();renderFilters();renderList();route();
+  </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+o. Entre a intenção e o ponto de venda existe uma sequência de escolhas pequenas: qual cliente entra na rota, quanto tempo recebe, que item aparece primeiro na conversa e qual oportunidade fica para depois. Em grande parte do canal indireto, essas escolhas passam pelo vendedor do distribuidor.</p>
+
+          <h2>A agenda é o ponto de decisão</h2>
+          <p>O representante inicia o dia com uma carteira extensa, deslocamentos, pedidos pendentes, cobrança, ruptura, devolução e metas de diversas marcas. Seu tempo é finito. O espaço mental também. Quando abre a agenda, ele distribui atenção entre clientes e problemas concorrentes.</p>
+          <p>É nesse momento que a estratégia da indústria ganha forma prática. Uma campanha só existe no mercado quando altera uma decisão: visitar um cliente adicional, incluir um SKU, recuperar um item sem recompra, testar uma nova combinação ou explicar melhor uma novidade. O material produzido pela indústria ajuda, mas raramente resolve sozinho a ordem dessas decisões.</p>
+          <p>O desafio aumenta porque distribuidores costumam operar portfólios multimarcas. A mesma equipe que apresenta o produto de uma indústria também precisa entregar margem, giro e nível de serviço para o próprio distribuidor. A Salesforce destaca essa característica ao explicar que parceiros de canal podem representar ofertas concorrentes. A preferência, portanto, precisa ser conquistada no fluxo real de trabalho.</p>
+
+          <div class="callout">Disponibilidade de informação não cria prioridade. A prioridade precisa chegar ligada a um cliente, a um momento e a um motivo.</div>
+
+          <h2>Informação sem contexto vira ruído</h2>
+          <p>Catálogos, tabelas, grupos de mensagem e treinamentos acumulam conhecimento. Ainda assim, o vendedor pode terminar o dia sem saber onde aplicar esse conhecimento. A pergunta útil é muito mais específica: entre os clientes da rota de hoje, qual tem maior chance de comprar o produto estratégico e por quê?</p>
+          <p>Uma orientação acionável combina quatro peças. Primeiro, identifica o cliente. Depois, mostra o sinal que tornou a oportunidade relevante: histórico de compra, intervalo desde o último pedido, perfil semelhante, estoque, sazonalidade ou campanha vigente. Em seguida, sugere o produto ou o mix. Por fim, oferece um argumento comercial que faça sentido para o comprador e para quem vende.</p>
+          <p>Sem essa conexão, o representante precisa fazer o trabalho de interpretação sozinho. Alguns conseguem, apoiados em experiência e memória. Outros priorizam o que já conhecem, o que tem melhor comissão ou o que o cliente pede espontaneamente. O resultado costuma favorecer os itens de venda fácil e reduzir o espaço para lançamentos, ampliação de mix e objetivos estratégicos.</p>
+
+          <h2>O que uma recomendação precisa responder</h2>
+          <p>Uma boa recomendação cabe em poucos segundos de leitura, mas nasce de uma composição cuidadosa. Ela deve responder:</p>
+          <ul>
+            <li><strong>Para quem?</strong> O cliente ou grupo de clientes com aderência comprovável.</li>
+            <li><strong>Por que agora?</strong> O evento, a janela de recompra ou a condição comercial que aumenta a relevância.</li>
+            <li><strong>O quê?</strong> O produto, o mix ou a ação recomendada, com disponibilidade e regras válidas.</li>
+            <li><strong>Qual benefício?</strong> Ganho para o ponto de venda, para o distribuidor e para o próprio representante.</li>
+            <li><strong>Qual cuidado?</strong> Risco de excesso de estoque, baixa margem, conflito com política ou baixa probabilidade.</li>
+          </ul>
+          <p>Explicar o motivo é decisivo. Um vendedor experiente rejeita facilmente uma sugestão que contradiz o que observa em campo. Quando o sistema mostra os sinais utilizados, a recomendação deixa de parecer uma ordem distante e passa a funcionar como apoio à decisão. A experiência humana continua presente; agora tem uma hipótese concreta para confirmar ou corrigir.</p>
+
+          <h2>Como medir atenção convertida</h2>
+          <p>A abertura de uma comunicação indica alcance, mas diz pouco sobre execução. O acompanhamento precisa seguir o caminho completo: recomendação entregue, recomendação vista, cliente visitado, produto apresentado, pedido criado e recompra posterior. Também é importante registrar por que uma sugestão foi recusada. Produto indisponível, preço, concorrente, momento inadequado e falta de interesse contam histórias diferentes.</p>
+          <p>Esse retorno forma um ciclo. A indústria aprende quais sinais realmente antecipam venda. O distribuidor entende onde o esforço da equipe gera giro e margem. O vendedor recebe recomendações melhores e economiza tempo de preparação. A cada passagem, a estratégia fica menos genérica.</p>
+          <p>O conceito Hub 360 parte desse ponto de decisão. A base de força de vendas organiza carteira, rota, preço, estoque, histórico e pedido. A camada de inteligência conecta a essa base as prioridades da indústria, as regras do distribuidor e a probabilidade de resposta do cliente. Assim, a estratégia deixa de depender apenas de campanhas amplas e começa a participar das escolhas que compõem o dia.</p>
+
+          <section class="sources"><h2>Leituras e fontes</h2><ul>
+            <li><a href="https://www.salesforce.com/blog/sales/indirect-sales/" target="_blank" rel="noopener">Salesforce — Indirect Sales: How to Grow Revenue With Third-Party Sellers</a></li>
+            <li><a href="https://www.salesforce.com/sales/partner-relationship-management/channel-management/" target="_blank" rel="noopener">Salesforce — Channel Management</a></li>
+            <li><a href="https://www.wmw.com.br/solucao/forca-de-vendas/" target="_blank" rel="noopener">WMW Systems — Força de vendas</a></li>
+          </ul></section>`
+      },
+      {
+        n:2,
+        slug:'sfa-alem-do-pedido-orientar-venda',
+        category:'Força de vendas',
+        read:9,
+        keywords:'SFA sales force automation automação força de vendas pedido próxima melhor ação inteligência comercial ERP CRM',
+        title:'SFA além do pedido: quando a automação começa a orientar a venda',
+        dek:'Registrar pedidos com segurança continua essencial. O próximo salto do SFA aparece quando cada visita chega preparada com contexto, oportunidade e uma ação recomendada.',
+        body:`
+          <p>Durante anos, o valor mais visível de um sistema de automação da força de vendas esteve na execução confiável do pedido. Tabela certa, política comercial aplicada, estoque consultado, aprovação por alçada, trabalho offline e integração com o ERP resolvem problemas concretos. Essa fundação continua indispensável. O que muda é a expectativa sobre o que o sistema pode fazer antes de o vendedor começar a digitar itens.</p>
+
+          <h2>A automação que protege a operação</h2>
+          <p>Um bom SFA reduz retrabalho e impede que cada representante carregue a complexidade da empresa na memória. Preço, desconto, crédito, comissão, rentabilidade, grade, frete e disponibilidade chegam organizados ao campo. O pedido nasce dentro das regras e percorre um fluxo rastreável. Em territórios com conectividade irregular, a operação offline mantém o vendedor produtivo.</p>
+          <p>Essa camada transacional costuma gerar os primeiros ganhos: menos erros, transmissão mais rápida e maior controle. A própria definição de SFA da Oracle enfatiza a automação de tarefas repetitivas, a gestão de contas e o uso de dados unificados. No contexto brasileiro, a WMW descreve a agenda com check-in, rotas, estoque, condições comerciais e integração ao ERP como elementos centrais da venda externa.</p>
+          <p>O limite aparece quando a tela responde muito bem a “como lançar” e pouco a “onde existe a melhor oportunidade”. O vendedor pode executar um pedido perfeito e ainda trabalhar apenas sobre a demanda que já chegou pronta.</p>
+
+          <h2>Da tela de pedido para a preparação da visita</h2>
+          <p>Orientar a venda começa antes do encontro. Ao abrir a agenda, o representante deveria reconhecer quais clientes merecem atenção, quais estão em risco de atraso na recompra, onde o mix encolheu e qual campanha combina com o perfil da loja. Ao abrir um cliente, precisa encontrar contexto suficiente para escolher uma abordagem.</p>
+          <p>Isso não exige uma avalanche de alertas. Exige seleção. Uma interface útil apresenta poucas oportunidades, ordenadas por relevância, e explica os sinais usados. “Cliente com intervalo de recompra 18 dias acima da média” é mais acionável que “cliente em risco”. “Três lojas semelhantes incluíram este SKU no último ciclo” oferece um argumento melhor que “produto recomendado”.</p>
+          <div class="callout">O SFA passa a orientar a venda quando transforma dados dispersos em uma escolha que o representante consegue executar na próxima visita.</div>
+
+          <h2>Próxima melhor ação com os pés no chão</h2>
+          <p>Plataformas de vendas vêm incorporando recursos de “próxima melhor ação” e agentes de IA. Microsoft e Oracle apresentam essa evolução como apoio para priorização, preparação e atualização automática de registros. No canal indireto, porém, a recomendação precisa considerar variáveis que um CRM de venda direta nem sempre vê.</p>
+          <p>Há pelo menos três contextos simultâneos. A indústria tem prioridades de marca, lançamento e distribuição. O distribuidor tem estoque, margem, cobertura, política e capacidade logística. O cliente tem histórico, perfil, momento e probabilidade de compra. Uma sugestão comercial só se sustenta quando respeita os três.</p>
+          <p>Imagine um produto estratégico com boa aderência a determinado varejista. Se o distribuidor não tem estoque disponível, a recomendação frustra vendedor e comprador. Se há estoque, mas a margem está abaixo do limite, a oportunidade precisa de outra condição. Se tudo está correto e o cliente acabou de recomprar, o momento ainda pode ser ruim. Inteligência comercial começa nessa composição, não no volume de mensagens geradas.</p>
+
+          <h2>A adoção depende do fluxo, não do discurso</h2>
+          <p>Ferramentas de venda perdem espaço quando criam uma etapa paralela. Se o representante precisa consultar um painel, memorizar uma recomendação e depois voltar ao aplicativo de pedidos, a fricção vence. A orientação deve aparecer onde a decisão ocorre: agenda, ficha do cliente, catálogo e carrinho.</p>
+          <p>Também precisa respeitar autonomia. O vendedor conhece fatos que o banco de dados ainda não capturou: reforma na loja, mudança de comprador, presença agressiva de um concorrente, problema de entrega. Por isso, aceitar, adiar ou recusar uma recomendação deve ser simples, com a possibilidade de registrar o motivo. Esse retorno melhora o modelo e ajuda a gestão a distinguir baixa adoção de baixa qualidade da sugestão.</p>
+
+          <h2>O novo conjunto de métricas</h2>
+          <p>Pedidos transmitidos, tempo 

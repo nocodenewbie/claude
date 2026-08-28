@@ -1,0 +1,72 @@
+azo e manter o mix estagnado. A intenção estratégica introduz exploração controlada: produtos novos, clientes potenciais e espaços de portfólio que ainda não aparecem no passado.</p>
+          <p>Essa intenção precisa ser traduzida em parâmetros operacionais: público elegível, período, cobertura desejada, argumento, condição e limite de investimento. Um objetivo amplo como “crescer a categoria” oferece pouca direção para o algoritmo e para o vendedor.</p>
+
+          <h2>A realidade do distribuidor</h2>
+          <p>O distribuidor transforma intenção em disponibilidade. Estoque por filial, prazo de entrega, margem, crédito, política comercial, capacidade logística e outras campanhas definem o que pode ser prometido. Uma IA que ignora essas condições recomenda oportunidades impossíveis.</p>
+          <p>Também precisa considerar o custo de atenção. A equipe vende várias marcas e responde por metas próprias. Se dez indústrias enviarem cinco prioridades para o mesmo dia, o representante recebe cinquenta “próximas melhores ações”. A ordem precisa nascer de uma visão conjunta e respeitar a carga da agenda.</p>
+          <p>A camada de força de vendas fornece esse chão operacional. Ela sabe quem atende o cliente, quando a visita está prevista, quais regras se aplicam e que itens podem entrar no pedido. Sem integração ao fluxo, a IA produz uma lista externa que envelhece rapidamente.</p>
+
+          <h2>A probabilidade do cliente</h2>
+          <p>O terceiro contexto está no ponto de venda: comportamento de compra, cesta, porte, localização, intervalo, sensibilidade a preço e resposta a ações anteriores. Clientes semelhantes ajudam quando o histórico individual é escasso. Eventos recentes indicam se a janela está aberta.</p>
+          <p>Probabilidade, contudo, não equivale a conveniência. Um cliente pode ter alta chance de aceitar um item e já estar com cobertura excessiva. Pode responder a desconto, mas destruir a margem do distribuidor. Por isso, o modelo de propensão deve trabalhar dentro de limites comerciais e de estoque.</p>
+          <div class="callout">Indústria define o propósito. Distribuidor define a possibilidade. Cliente define a probabilidade. A recomendação nasce na interseção.</div>
+
+          <h2>O que a IA deve entregar ao vendedor</h2>
+          <p>A saída mais útil costuma ser curta: ação, justificativa e apoio. “Apresente o SKU X ao cliente Y; a loja recompra a categoria nesta semana, ainda não trabalha o tamanho mais vendido em pares semelhantes e há estoque na filial.” Em seguida, o sistema pode oferecer argumento, material e condição vigente.</p>
+          <p>O representante precisa decidir. Aceitar, adaptar, adiar ou recusar são respostas válidas. Para sugestões de maior impacto — desconto fora do padrão, alteração de mix relevante ou compromisso de volume — entram aprovações e limites. Automação cresce com responsabilidade quando o nível de autonomia acompanha o risco.</p>
+
+          <h2>O ciclo de feedback importa mais que a primeira versão</h2>
+          <p>Uma recomendação vista e ignorada traz informação. A recusa com motivo traz ainda mais. Pedido convertido, quantidade, margem e recompra fecham o ciclo. Esses eventos permitem comparar previsão e resultado, detectar mudanças de comportamento e recalibrar o sistema.</p>
+          <p>O acompanhamento também deve procurar vieses de cobertura. Se o modelo prioriza apenas clientes com histórico rico, lojas menores ou novas ficam invisíveis. Se aprende com campanhas antigas, pode reproduzir regiões e perfis que receberam mais investimento, em vez dos que tinham maior potencial. Testes por segmento e regras de exploração reduzem essa concentração.</p>
+
+          <h2>Uma evolução em camadas</h2>
+          <p>A implantação pode começar com diagnóstico descritivo e alertas baseados em regras. Depois entram probabilidade, ranking e recomendações prescritivas. Agentes capazes de preparar visitas, registrar retornos ou montar uma proposta chegam quando dados, permissões e processo já estão estáveis.</p>
+          <p>Microsoft e Oracle vêm incorporando agentes e próxima melhor ação às plataformas de vendas. O diferencial no canal indireto está na composição dos contextos. O Hub 360 trata a IA como parte do circuito entre estratégia, operação e resposta do campo. O valor aparece quando a recomendação chega certa, cabe na agenda e aprende com o que aconteceu.</p>
+
+          <section class="sources"><h2>Leituras e fontes</h2><ul>
+            <li><a href="https://www.oracle.com/br/cx/sales/sales-force-automation/what-is-sfa/" target="_blank" rel="noopener">Oracle — SFA, dados unificados e próxima melhor ação</a></li>
+            <li><a href="https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2025/07/30/microsoft-named-a-leader-in-the-2025-gartner-magic-quadrant-for-sales-force-automation-platforms/" target="_blank" rel="noopener">Microsoft — IA em plataformas de automação de vendas</a></li>
+            <li><a href="https://www.wmw.com.br/" target="_blank" rel="noopener">WMW Systems — Inteligência de vendas e operação omnichannel</a></li>
+          </ul></section>`
+      },
+      {
+        n:7,
+        slug:'campanhas-canal-indireto-pico-estoque-fadiga',
+        category:'Incentivos & execução',
+        read:9,
+        keywords:'campanha canal indireto incentivo vendedor distribuidor estoque giro sell-out fadiga incrementalidade metas',
+        title:'Campanhas no canal indireto: como evitar pico de venda, estoque parado e fadiga',
+        dek:'Campanha boa muda comportamento sem comprometer o ciclo seguinte. Isso exige público, missão, limite e uma leitura que vá além do volume faturado.',
+        body:`
+          <p>Campanhas concentram atenção. Essa é sua força e também sua fonte de risco. Ao elevar prêmio, desconto ou pressão de meta, a empresa pode antecipar pedidos que aconteceriam de qualquer forma, deslocar esforço de itens importantes e deixar estoque acumulado depois do encerramento. O pico do mês conta apenas a primeira parte da história.</p>
+
+          <h2>Comece pelo comportamento desejado</h2>
+          <p>“Vender mais” abre possibilidades demais. Uma campanha precisa indicar qual mudança pretende provocar: ativar clientes, ampliar mix, acelerar experimentação de um lançamento, recuperar recompra, ganhar distribuição ou reduzir estoque localizado.</p>
+          <p>Cada comportamento pede público e mecânica próprios. Para ativação, pode fazer sentido recompensar o primeiro pedido válido e a segunda compra dentro de uma janela. Para mix, a regra deve valorizar combinações sustentáveis, não apenas quantidade. Para giro de estoque, a elegibilidade precisa considerar onde está o saldo e quais clientes têm aderência.</p>
+          <p>Quando a missão é específica, a comunicação melhora. O vendedor entende o que fazer, o gestor consegue acompanhar e a indústria mede a mudança pretendida.</p>
+
+          <h2>Três níveis de incentivo</h2>
+          <p>O distribuidor decide espaço, estoque e prioridade. O gestor da equipe distribui atenção e remove barreiras. O vendedor executa a visita. Programas maduros reconhecem esses três níveis sem criar regras contraditórias.</p>
+          <p>Um acordo com o distribuidor pode relacionar investimento a cobertura, disponibilidade e qualidade do dado. A liderança comercial pode ter metas de execução equilibradas. O representante recebe uma missão simples, com critério que ele acompanha durante o ciclo.</p>
+          <p>O desenho também deve respeitar o valor para o revendedor. Pesquisa publicada em Industrial Marketing Management propõe adaptar incentivos às necessidades de desempenho do parceiro. Na prática, volume para a indústria precisa conversar com margem, giro e esforço de atendimento no distribuidor.</p>
+
+          <div class="callout">O incentivo compra atenção por um período. A qualidade do desenho decide se essa atenção vira hábito, recompra ou apenas antecipação.</div>
+
+          <h2>Proteções contra efeitos indesejados</h2>
+          <p>Algumas regras simples reduzem distorções. Limites por cliente evitam concentração. Critérios de margem e devolução protegem qualidade. Estoque máximo impede empurrar volume para um ponto já coberto. Janela de recompra ajuda a distinguir experimentação de consumo sustentável.</p>
+          <p>A frequência também importa. Campanhas contínuas e sobrepostas transformam tudo em urgência. O representante perde referência e começa a escolher pelo maior prêmio. Um calendário coordenado, com períodos de respiro e número limitado de missões ativas, preserva atenção.</p>
+          <p>Outro cuidado é a competição entre produtos. Se o item incentivado substitui um produto igualmente estratégico, o ganho pode ser apenas deslocamento interno. A análise precisa observar a categoria e o carrinho completo.</p>
+
+          <h2>Volume pago e volume incremental</h2>
+          <p>Contar unidades elegíveis calcula o custo, mas não demonstra efeito. Parte daquele volume ocorreria sem campanha. A medida de incrementalidade compara o resultado com uma referência: clientes semelhantes fora da ação, período anterior ajustado por sazonalidade ou estimativa baseada no comportamento histórico.</p>
+          <p>Além do incremento durante o ciclo, vale acompanhar quatro consequências: margem líquida do incentivo, estoque após o fim, recompra e permanência do novo mix. Uma ação pode parecer cara na primeira compra e se pagar com recorrência. Outra pode entregar volume imediato e exigir desconto adicional para limpar o saldo.</p>
+          <p>Estudos sobre o momento de bônus em vendas também alertam para deslocamentos temporais. O esforço pode se concentrar perto do corte e deixar um vale no período seguinte. Ler semanas antes e depois evita atribuir ao programa um crescimento que apenas mudou de data.</p>
+
+          <h2>Campanha como produto de aprendizagem</h2>
+          <p>Uma campanha deveria gerar mais que um ranking final. Ela produz evidências sobre segmentos, argumentos, faixas de prêmio, objeções e capacidade do canal. O registro de aceites, recusas e motivos permite aprimorar a próxima rodada.</p>
+          <p>No Hub 360, a campanha entra como missão contextual dentro da agenda. O público é formado com sinais de cliente, estoque e estratégia. A execução aparece no mesmo ambiente do pedido. O retorno alimenta uma leitura de conversão e recompra. Essa conexão reduz a distância entre quem planeja a ação e quem precisa fazê-la funcionar em campo.</p>
+
+          <section class="sources"><h2>Leituras e fontes</h2><ul>
+            <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0019850103000312" target="_blank" rel="noopener">Industrial Marketing Management — Desenho de incentivos no canal</a></li>
+            <li><a href="https://link.springer.com/article/10.1007/s11129-008-9039-7" target="_blank" rel="noopener">Quantitative Marketing and Economics — Effort or timing: the effect of lump-sum bonuses</a></li>
+            <li><a href="https://trailh
