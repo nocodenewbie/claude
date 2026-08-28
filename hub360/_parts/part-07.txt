@@ -1,0 +1,82 @@
+ead.salesforce.com/content/learn/modules/channel-revenue-management-quick-look/enhance-channel-collaboration-with-channel-revenue-management" target="_blank" rel="noopener">Salesforce Trailhead — Incentivos, rebates e dados de revenda</a></li>
+          </ul></section>`
+      },
+      {
+        n:8,
+        slug:'planejamento-conjunto-distribuidores-execucao',
+        category:'Estratégia do canal',
+        read:9,
+        keywords:'JBP joint business plan planejamento conjunto distribuidor indústria canal indireto execução metas dados sell-out',
+        title:'Planejamento conjunto com distribuidores: onde a estratégia costuma desandar',
+        dek:'O plano ganha força quando metas compartilhadas viram decisões semanais de estoque, cobertura, mix e agenda — com sinais visíveis para os dois lados.',
+        body:`
+          <p>Indústria e distribuidor podem concordar com a ambição do ano e divergir em quase todas as escolhas que levam até ela. A indústria busca presença, mix e construção de categoria. O distribuidor precisa equilibrar giro, margem, capital, logística e o conjunto de marcas que representa. Um planejamento conjunto útil organiza essas tensões antes que apareçam no fechamento.</p>
+
+          <h2>O plano começa com uma tese comum</h2>
+          <p>Metas de faturamento são necessárias, mas insuficientes para explicar de onde virá o crescimento. A tese precisa escolher alavancas: ampliar cobertura em determinados segmentos, recuperar clientes, aumentar frequência, introduzir uma linha, elevar mix ou avançar em territórios.</p>
+          <p>Cada alavanca deve vir acompanhada de hipótese e evidência. Se a aposta é expansão de mix, quais clientes apresentam espaço e qual capacidade de estoque será necessária? Se o foco é ativação, quantos clientes elegíveis existem, quem os atende e qual oferta reduz a barreira inicial?</p>
+          <p>O trabalho sobre JBP publicado pela Cortex resume bem a diferença de perspectivas: a indústria tende a valorizar cobertura e penetração, enquanto o distribuidor observa volume, margem e operação logística. A tese comum conecta essas medidas em vez de escolher apenas um lado.</p>
+
+          <h2>Traduza o ano em ciclos curtos</h2>
+          <p>Um documento anual envelhece rápido. Mudam preço, disponibilidade, concorrência, calendário e resposta do mercado. O plano precisa de ciclos trimestrais para rever premissas e cadências mensais ou semanais para tratar execução.</p>
+          <p>Em cada ciclo curto, poucas prioridades devem chegar às equipes: segmentos, territórios, produtos, clientes elegíveis e ação esperada. O excesso de frentes dilui atenção. A organização pode preservar uma carteira de iniciativas, mas limita o que está ativo na agenda.</p>
+          <p>A revisão não deve ser uma apresentação paralela. Ela parte de um quadro comum de sell-in, sell-out, estoque, cobertura, mix e execução das missões. Quando cada empresa leva sua própria versão do número, a reunião começa discutindo origem e termina sem decisão.</p>
+
+          <div class="callout">O JBP se torna operacional quando cada indicador tem uma decisão associada, um responsável e uma próxima data de revisão.</div>
+
+          <h2>Defina compromissos dos dois lados</h2>
+          <p>Resultados compartilhados exigem contribuições explícitas. A indústria pode fornecer verba, conteúdo, priorização de portfólio, regras de público e suporte técnico. O distribuidor garante disponibilidade, equipe, dados, agenda e execução. O acordo registra o que acontece quando uma premissa falha.</p>
+          <p>Se o produto não chega à filial, a missão de venda precisa ser suspensa. Se a cobertura de dados cai, decisões passam a usar uma faixa de confiança. Se a conversão está baixa apesar da execução, oferta e argumento voltam para revisão. Essas regras evitam que o campo receba cobrança por uma condição que não controla.</p>
+          <p>Incentivos e rebates também precisam de rastreabilidade. Plataformas de channel revenue management tratam preço, estoque, revenda e programas de incentivo de forma conectada porque o cálculo depende da execução verificável. O desenho do plano deve prever desde o início quais dados comprovam cada compromisso.</p>
+
+          <h2>Leve a estratégia até a agenda</h2>
+          <p>O teste mais concreto de um planejamento é observar o dia do vendedor. Ele consegue reconhecer quais clientes compõem a prioridade? Sabe o motivo, o produto e o argumento? Encontra estoque e condição válidos? Seu gestor enxerga progresso sem pedir planilhas adicionais?</p>
+          <p>Uma iniciativa como “crescer em pequenos varejos do interior” pode virar uma lista dinâmica de clientes com potencial, rota sugerida, kit de entrada e meta de ativação. A resposta da visita atualiza o plano: interessado, sem perfil, preço, concorrente, retorno marcado. A estratégia passa a aprender com contatos reais.</p>
+
+          <h2>Feche o ciclo com uma leitura conjunta</h2>
+          <p>A análise deve separar execução de eficácia. Primeiro: as ações planejadas ocorreram, com oferta disponível e público correto? Depois: quando ocorreram, alteraram venda, mix, margem ou recompra? Essa separação evita descartar uma boa tese por falha operacional e evita celebrar uma execução intensa que não gerou valor.</p>
+          <p>No Hub 360, o plano compartilhado se liga à base diária da força de vendas e à leitura do canal. Prioridades viram missões; dados mostram cobertura e resposta; exceções voltam para indústria e distribuidor. O JBP deixa de morar apenas no calendário de reuniões e passa a orientar a rotina que produz o resultado.</p>
+
+          <section class="sources"><h2>Leituras e fontes</h2><ul>
+            <li><a href="https://www.cortex-intelligence.com/blog/industria/jbp" target="_blank" rel="noopener">Cortex Intelligence — JBP entre indústria e distribuidor</a></li>
+            <li><a href="https://www.salesforce.com/in/sales/channel-revenue-management/" target="_blank" rel="noopener">Salesforce — Channel Revenue Management</a></li>
+            <li><a href="https://www.modeln.com/wp-content/uploads/2019/01/ebk_best_practices_for_channel_data_management.pdf" target="_blank" rel="noopener">Model N — Dados de canal e colaboração com parceiros</a></li>
+          </ul></section>`
+      },
+      {
+        n:9,
+        slug:'sfa-prm-sell-out-trade-base-comum',
+        category:'Arquitetura 360',
+        read:10,
+        keywords:'SFA PRM CDM sell-out trade marketing incentivos canal indireto arquitetura dados integração Hub 360',
+        title:'SFA, PRM, sell-out, trade e incentivos: por que o canal exige uma base comum',
+        dek:'Cada disciplina resolve uma parte legítima da operação. O ganho sistêmico aparece quando cliente, produto, parceiro, regra e resultado conservam o mesmo contexto.',
+        body:`
+          <p>Operações de canal indireto cresceram por camadas. O SFA organizou a visita e o pedido. O PRM estruturou o relacionamento com parceiros. Soluções de sell-out trouxeram visibilidade de revenda. Trade marketing coordenou campanhas e execução. Ferramentas de incentivos calcularam prêmios e rebates. O problema surge quando cada camada descreve o mesmo mercado de um jeito diferente.</p>
+
+          <h2>O papel legítimo de cada disciplina</h2>
+          <p><strong>SFA</strong> cuida do trabalho comercial: carteira, agenda, catálogo, regras, pedido e retorno de visita. <strong>PRM</strong> organiza cadastro, comunicação, capacitação, oportunidades e desempenho de parceiros. <strong>Channel data management</strong> coleta e padroniza venda e estoque no ecossistema. <strong>Trade</strong> planeja públicos, campanhas, materiais e execução. <strong>Incentivos</strong> define elegibilidade, cálculo, comprovação e pagamento.</p>
+          <p>Essas funções não precisam desaparecer dentro de uma única tela. Precisam compartilhar entidades e eventos. O código de produto utilizado na campanha deve corresponder ao item disponível no distribuidor e ao SKU lançado no pedido. O cliente selecionado pelo modelo deve ser o ponto atendido pelo vendedor. A venda que comprova a campanha deve voltar ao cálculo sem uma reconciliação manual.</p>
+
+          <h2>A fragmentação aparece na ponta</h2>
+          <p>Para a gestão, a fragmentação cria planilhas de ligação, discussões sobre números e demora para mudar uma regra. Para o vendedor, ela aparece como mensagens repetidas, cadastros diferentes e tarefas fora do aplicativo principal. Para o distribuidor, significa esforço de integração e pouca devolução de valor.</p>
+          <p>Um exemplo comum: trade seleciona uma lista de lojas; o arquivo segue por e-mail; a liderança distribui entre representantes; o vendedor consulta estoque em outro sistema; a campanha é comprovada por um terceiro arquivo; a indústria recebe o resultado semanas depois. Cada etapa pode funcionar e o conjunto ainda ser lento.</p>
+          <div class="callout">Integração de canal fica completa quando mantém o contexto da intenção até o pedido e do pedido até o aprendizado.</div>
+
+          <h2>A base comum tem poucas peças centrais</h2>
+          <p>Uma arquitetura 360 pode começar com cinco conjuntos de dados:</p>
+          <ul>
+            <li><strong>Parceiros e territórios:</strong> distribuidor, filial, equipe, carteira e responsabilidade.</li>
+            <li><strong>Clientes e pontos de venda:</strong> identidade, hierarquia, segmento, localização e relacionamento.</li>
+            <li><strong>Produtos e condições:</strong> equivalência de códigos, embalagem, preço, margem, estoque e política.</li>
+            <li><strong>Interações e transações:</strong> visita, recomendação, aceite, pedido, sell-in, sell-out e devolução.</li>
+            <li><strong>Objetivos e regras:</strong> campanha, público, score, incentivo, limite e período.</li>
+          </ul>
+          <p>Além do modelo, cada evento precisa de tempo, origem e nível de confiança. Essa trilha permite reprocessar cálculos, explicar recomendações e identificar onde a informação se perdeu.</p>
+
+          <h2>APIs ajudam; identidade compartilhada decide</h2>
+          <p>Conectar sistemas por API reduz atraso, mas não resolve sozinho o significado. Se duas plataformas usam códigos distintos para a mesma loja, a troca será rápida e ambígua. A arquitetura precisa de serviços de correspondência, regras de versionamento e uma fonte responsável por cada atributo.</p>
+          <p>Também precisa definir quais dados atravessam cada fronteira. O distribuidor pode compartilhar venda e estoque no nível necessário à colaboração, enquanto informações comerciais sensíveis permanecem protegidas. Perfis de acesso, finalidade e rastreabilidade acompanham o desenho técnico.</p>
+
+          <h2>O Hub 360 como camada de coordenação</h2>
+          <p>A Salesforce distingue PRM de CRM e trata channel revenue management como um conjunto próprio para revendas, estoque e incentivos. A Oracle posiciona SFA ao redor da produtividade e da próxima ação. A Model N descrev
