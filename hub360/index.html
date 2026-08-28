@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hub 360 — WMW Systems</title>
+  <style>html,body{margin:0;min-height:100%;background:#214BE8;color:#fff;font:16px system-ui,sans-serif}.loading{min-height:100vh;display:grid;place-items:center}.loading span{opacity:.72}</style>
+</head>
+<body>
+  <div class="loading"><span>Carregando Hub 360…</span></div>
+  <script>
+    (async()=>{
+      const urls=Array.from({length:9},(_,i)=>`_parts/part-${String(i+1).padStart(2,'0')}.txt`);
+      const parts=await Promise.all(urls.map(async url=>{const r=await fetch(url,{cache:'no-store'});if(!r.ok)throw new Error(`${url}: ${r.status}`);return r.text()}));
+      document.open();document.write(parts.join(''));document.close();
+    })().catch(err=>{document.body.innerHTML=`<div class="loading"><span>Não foi possível carregar a página.<br>${err.message}</span></div>`;console.error(err)});
+  </script>
+</body>
+</html>
