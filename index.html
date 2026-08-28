@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max - Seu Representante de Vendas com IA | Distribuidora Inteligente</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #2563eb;
+            --primary-dark: #1e40af;
+            --secondary-color: #10b981;
+            --accent-color: #f59e0b;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-light: #f9fafb;
+            --white: #ffffff;
+            --border-color: #e5e7eb;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.75rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .cta-button {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: var(--white);
+            padding: 6rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="%23ffffff"/><path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" fill="%23ffffff"/><path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="%23ffffff"/></svg>') no-repeat bottom;
+            background-size: cover;
+            opacity: 0.1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+        .hero h2 {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            font-weight: 400;
+            opacity: 0.95;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero .cta-button {
+            background: var(--secondary-color);
+            font-size: 1.25rem;
+            padding: 1rem 2.5rem;
+            margin-top: 1rem;
+        }
+
+        .hero .cta-button:hover {
+            background: #059669;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 5rem 0;
+            background: var(--white);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.125rem;
+            color: var(--text-light);
+            margin-bottom: 3rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            padding: 2rem;
+            background: var(--bg-light);
+            border-radius: 12px;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-dark);
+        }
+
+        .feature-card p {
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+
+        /* Products Section */
+        .products {
+            padding: 5rem 0;
+            background: var(--bg-light);
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+        }
+
+        .product-info {
+            padding: 1.5rem;
+        }
+
+        .product-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+        }
+
+        .product-description {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .product-details {
+            background: var(--bg-light);
+            padding: 0.75rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .product-price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1rem;
+        }
+
+        .price {
+            font-size: 1.75rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+
+        .price-unit {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 5rem 0;
+            background: var(--white);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-card {
+            background: var(--bg-light);
+            padding: 2rem;
+            border-radius: 12px;
+            position: relative;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .testimonial-quote {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .testimonial-logo {
+            width: 60px;
+            height: 60px;
+            background: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.25rem;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .testimonial-info h4 {
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            margin-bottom: 0.25rem;
+        }
+
+        .testimonial-info p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: var(--white);
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .cta-section .cta-button {
+            background: var(--secondary-color);
+            font-size: 1.5rem;
+            padding: 1.25rem 3rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--text-dark);
+            color: var(--white);
+            padding: 3rem 0 1.5rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: var(--white);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: var(--white);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.7);
+        }
+
+        /* Chat Widget */
+        .chat-widget {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .chat-button {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: var(--secondary-color);
+            color: var(--white);
+            border: none;
+            font-size: 2rem;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .chat-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+        }
+
+        .chat-button.active {
+            background: var(--primary-color);
+        }
+
+        .chat-window {
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            width: 380px;
+            max-width: calc(100vw - 40px);
+            height: 550px;
+            max-height: calc(100vh - 140px);
+            background: var(--white);
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .chat-window.active {
+            display: flex;
+        }
+
+        .chat-header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: var(--white);
+            padding: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .chat-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+        }
+
+        .chat-header-info h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .chat-status {
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+
+        .chat-status::before {
+            content: '●';
+            color: var(--secondary-color);
+            margin-right: 0.5rem;
+        }
+
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 1.5rem;
+            background: var(--bg-light);
+        }
+
+        .message {
+            margin-bottom: 1rem;
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .message.bot .message-bubble {
+            background: var(--white);
+            color: var(--text-dark);
+            border-radius: 12px 12px 12px 4px;
+        }
+
+        .message.user .message-bubble {
+            background: var(--primary-color);
+            color: var(--white);
+            border-radius: 12px 12px 4px 12px;
+            margin-left: auto;
+        }
+
+        .message-bubble {
+            padding: 0.875rem 1.125rem;
+            max-width: 80%;
+            line-height: 1.5;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .message.user {
+            justify-content: flex-end;
+        }
+
+        .chat-input-container {
+            padding: 1rem;
+            background: var(--white);
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .chat-input {
+            flex: 1;
+            padding: 0.875rem;
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            font-size: 0.95rem;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .chat-input:focus {
+            border-color: var(--primary-color);
+        }
+
+        .chat-send {
+            background: var(--primary-color);
+            color: var(--white);
+            border: none;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.25rem;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .chat-send:hover {
+            background: var(--primary-dark);
+            transform: scale(1.05);
+        }
+
+        /* Quick Actions */
+        .quick-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            padding: 0 1.5rem 1rem;
+        }
+
+        .quick-action {
+            background: var(--white);
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .quick-action:hover {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.25rem;
+            }
+
+            .hero h2 {
+                font-size: 1.125rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .features-grid,
+            .products-grid,
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .chat-window {
+                width: calc(100vw - 40px);
+                height: calc(100vh - 140px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+
+            .cta-section h2 {
+                font-size: 1.75rem;
+            }
+
+            .hero .cta-button,
+            .cta-section .cta-button {
+                font-size: 1rem;
+                padding: 0.875rem 1.5rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        /* Typing indicator */
+        .typing-indicator {
+            display: flex;
+            gap: 4px;
+            padding: 1rem;
+        }
+
+        .typing-indicator span {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--text-light);
+            animation: typing 1.4s infinite;
+        }
+
+        .typing-indicator span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .typing-indicator span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes typing {
+            0%, 60%, 100% {
+                transform: translateY(0);
+                opacity: 0.5;
+            }
+            30% {
+                transform: translateY(-10px);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">🤖 Max IA</div>
+            <ul class="nav-links">
+                <li><a href="#features">Recursos</a></li>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#testimonials">Depoimentos</a></li>
+            </ul>
+            <button class="cta-button" onclick="openChat()">Falar com Max</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Revolucione Suas Vendas com IA</h1>
+            <h2>Max, seu representante comercial inteligente que conhece cada produto, negocia descontos e aumenta suas vendas 24/7. Perfeito para distribuidoras de alimentos e bebidas que atendem restaurantes e estabelecimentos.</h2>
+            <button class="cta-button" onclick="openChat()">🚀 Fazer Pedido com Max Agora</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Por Que Escolher Max?</h2>
+            <p class="section-subtitle">Um representante de vendas que nunca dorme, sempre animado e pronto para maximizar seus lucros</p>
+
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🧠</div>
+                    <h3>Conhecimento Total do Catálogo</h3>
+                    <p>Max conhece cada produto, suas aplicações, rendimento e dicas de uso. Sabe que o extrato de tomate de 5kg rende mais refeições e dura mais que outras opções.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">💰</div>
+                    <h3>Negocia Descontos Inteligentes</h3>
+                    <p>Conhece todas as promoções e condições especiais. Sugere aumentar pedidos para atingir valores mínimos e garantir melhores descontos.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">📊</div>
+                    <h3>Otimização de Lucros</h3>
+                    <p>Orienta sobre como usar cada produto para maximizar a lucratividade do seu restaurante, sugerindo as melhores combinações.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Respostas Instantâneas</h3>
+                    <p>Sem espera! Max responde na hora com cotações, disponibilidade e prazos de entrega. Pedidos processados em tempo real.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Vendedor Entusiasmado</h3>
+                    <p>Max trata cada cliente como seu melhor amigo. Atendimento caloroso, simpático e focado em fazer você se sentir especial.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">📱</div>
+                    <h3>Disponível 24/7</h3>
+                    <p>Faça pedidos a qualquer hora, de qualquer lugar. Max está sempre pronto para atender, seja de madrugada ou em feriados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Nossos Produtos em Destaque</h2>
+            <p class="section-subtitle">Alimentos e bebidas de alta qualidade para o seu estabelecimento</p>
+
+            <div class="products-grid">
+                <div class="product-card fade-in">
+                    <div class="product-image">🍅</div>
+                    <div class="product-info">
+                        <h3>Extrato de Tomate Premium</h3>
+                        <p class="product-description">Concentrado, rendimento superior. Ideal para molhos, pizzas e pratos italianos.</p>
+                        <div class="product-details">
+                            <strong>5kg</strong> - Rende até 200 porções<br>
+                            Validade: 18 meses<br>
+                            💡 Dica: Rende 40% mais que versões menores
+                        </div>
+                        <div class="product-price">
+                            <div>
+                                <div class="price">R$ 89,90</div>
+                                <div class="price-unit">por unidade</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">🥩</div>
+                    <div class="product-info">
+                        <h3>Tempero para Carnes Gourmet</h3>
+                        <p class="product-description">Blend exclusivo de especiarias que realça o sabor de carnes nobres.</p>
+                        <div class="product-details">
+                            <strong>2kg</strong> - Tempera até 400kg de carne<br>
+                            Sem conservantes artificiais<br>
+                            💡 Combo com sal especial: -15%
+                        </div>
+                        <div class="product-price">
+                            <div>
+                                <div class="price">R$ 124,90</div>
+                                <div class="price-unit">por unidade</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">🧈</div>
+                    <div class="product-info">
+                        <h3>Óleo de Soja Premium</h3>
+                        <p class="product-description">Alto ponto de fumaça, ideal para frituras e preparações profissionais.</p>
+                        <div class="product-details">
+                            <strong>20L</strong> - Caixa econômica<br>
+                            Rende 30% mais que óleos comuns<br>
+                            💡 A partir de 5 cx: R$ 149,90/cx
+                        </div>
+                        <div class="product-price">
+                            <div>
+                                <div class="price">R$ 169,90</div>
+                                <div class="price-unit">por caixa</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">🍚</div>
+                    <div class="product-info">
+                        <h3>Arroz Parboilizado Tipo 1</h3>
+                        <p class="product-description">Grãos soltos, textura perfeita. O preferido dos chefs profissionais.</p>
+                        <div class="product-details">
+                            <strong>30kg</strong> - Fardo comercial<br>
+                            Rende até 600 porções<br>
+                            💡 Pedidos acima de 10 fardos: frete grátis
+                        </div>
+                        <div class="product-price">
+                            <div>
+                                <div class="price">R$ 189,90</div>
+                                <div class="price-unit">por fardo</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">☕</div>
+                    <div class="product-info">
+                        <h3>Café Gourmet em Grãos</h3>
+                        <p class="product-description">100% Arábica, torra média, notas de chocolate e caramelo.</p>
+                        <div class="product-details">
+                            <strong>10kg</strong> - Pacote profissional<br>
+                            Rende até 1.000 xícaras<br>
+                            💡 Assinatura mensal: -20%
+                        </div>
+                        <div class="product-price">
+                            <div>
+                                <div class="price">R$ 279,90</div>
+                                <div class="price-unit">por pacote</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">🥤</div>
+                    <div class="product-info">
+                        <h3>Suco Concentrado Laranja</h3>
+                        <p class="product-description">100% natural, sem açúcar adicionado. 1L rende 5L de suco.</p>
+                        <div class="product-details">
+                            <strong>12x1L</strong> - Caixa master<br>
+                            Validade: 12 meses refrigerado<br>
+                            💡 Mix de sabores disponível
+                        </div>
+                        <div class="product-price">
+                            <div>
+                                <div class="price">R$ 156,90</div>
+                                <div class="price-unit">por caixa</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">O Que Nossos Clientes Dizem</h2>
+            <p class="section-subtitle">Empresas que já aumentaram suas vendas com Max</p>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-quote">"O Max revolucionou nossa forma de comprar! Ele sempre sugere produtos que realmente fazem diferença no nosso lucro. Em 3 meses aumentamos nossa margem em 18%."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-logo">🍕</div>
+                        <div class="testimonial-info">
+                            <h4>Roberto Silva</h4>
+                            <p>Pizzaria Bella Napoli - São Paulo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-quote">"Incrível! O Max conhece cada produto melhor que muitos vendedores humanos. Ele me mostrou como o extrato de 5kg economiza muito mais. Estou impressionado!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-logo">🍽️</div>
+                        <div class="testimonial-info">
+                            <h4>Mariana Costa</h4>
+                            <p>Restaurante Sabor da Casa - Rio de Janeiro</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-quote">"Faço pedidos de madrugada e Max está sempre lá, animado como se fosse meio-dia! O atendimento é excepcional e os descontos que ele negocia são imbatíveis."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-logo">🍔</div>
+                        <div class="testimonial-info">
+                            <h4>Carlos Mendes</h4>
+                            <p>Burger House - Belo Horizonte</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-quote">"Nosso faturamento cresceu 35% desde que começamos a usar o Max. Ele sempre sugere combos inteligentes e me ajuda a atingir os valores para descontos maiores."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-logo">🥘</div>
+                        <div class="testimonial-info">
+                            <h4>Ana Paula Rodrigues</h4>
+                            <p>Buffet & Eventos APR - Curitiba</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-quote">"Max é como ter um amigo que realmente se importa com seu negócio. Ele lembra das minhas preferências e sempre traz novidades que fazem sentido para minha cozinha."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-logo">🍜</div>
+                        <div class="testimonial-info">
+                            <h4>João Takahashi</h4>
+                            <p>Ramen Ya - Porto Alegre</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-quote">"Reduzimos nosso desperdício em 25% seguindo as orientações do Max sobre rendimento dos produtos. Ele realmente entende do negócio!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-logo">🥗</div>
+                        <div class="testimonial-info">
+                            <h4>Fernanda Lima</h4>
+                            <p>Salad & Co. - Brasília</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Pronto Para Aumentar Suas Vendas?</h2>
+            <p>Comece a fazer pedidos mais inteligentes e lucrativos hoje mesmo!</p>
+            <button class="cta-button" onclick="openChat()">💬 Iniciar Pedido com Max Agora</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Max IA Vendas</h3>
+                    <p>Seu representante comercial inteligente para distribuidoras de alimentos e bebidas.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#features">Recursos</a></li>
+                        <li><a href="#products">Produtos</a></li>
+                        <li><a href="#testimonials">Depoimentos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Suporte</h3>
+                    <ul>
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">Fale Conosco</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li>📧 contato@maxia.com.br</li>
+                        <li>📱 (11) 3000-0000</li>
+                        <li>📍 São Paulo, Brasil</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Max IA Vendas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget">
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <div class="chat-avatar">👨‍💼</div>
+                <div class="chat-header-info">
+                    <h3>Max - Seu Vendedor IA</h3>
+                    <div class="chat-status">Online agora</div>
+                </div>
+            </div>
+
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot">
+                    <div class="message-bubble">
+                        Opa, meu amigo! 🎉 Que alegria te ver por aqui! Sou o Max, seu parceiro de vendas!
+                        <br><br>
+                        Cara, to super animado pra te ajudar a fazer um pedido INCRÍVEL hoje! Conhece nosso extrato de tomate de 5kg? É simplesmente SENSACIONAL, rende muito mais que os outros e seu lucro vai lá pra cima! 📈
+                        <br><br>
+                        Me conta, o que você precisa hoje? Vamos fazer seu estabelecimento brilhar! ✨
+                    </div>
+                </div>
+            </div>
+
+            <div class="quick-actions">
+                <button class="quick-action" onclick="sendQuickMessage('Quero fazer um pedido')">Fazer Pedido</button>
+                <button class="quick-action" onclick="sendQuickMessage('Quais são as promoções?')">Ver Promoções</button>
+                <button class="quick-action" onclick="sendQuickMessage('Preciso de ajuda')">Preciso de Ajuda</button>
+            </div>
+
+            <div class="chat-input-container">
+                <input type="text" class="chat-input" id="chatInput" placeholder="Digite sua mensagem...">
+                <button class="chat-send" onclick="sendMessage()">➤</button>
+            </div>
+        </div>
+
+        <button class="chat-button" id="chatButton" onclick="toggleChat()">💬</button>
+    </div>
+
+    <script>
+        // Chat functionality
+        const chatButton = document.getElementById('chatButton');
+        const chatWindow = document.getElementById('chatWindow');
+        const chatMessages = document.getElementById('chatMessages');
+        const chatInput = document.getElementById('chatInput');
+
+        function toggleChat() {
+            chatWindow.classList.toggle('active');
+            chatButton.classList.toggle('active');
+        }
+
+        function openChat() {
+            chatWindow.classList.add('active');
+            chatButton.classList.add('active');
+        }
+
+        function sendMessage() {
+            const message = chatInput.value.trim();
+            if (!message) return;
+
+            // Add user message
+            addMessage(message, 'user');
+            chatInput.value = '';
+
+            // Simulate bot typing
+            setTimeout(() => {
+                addTypingIndicator();
+                setTimeout(() => {
+                    removeTypingIndicator();
+                    const response = generateResponse(message);
+                    addMessage(response, 'bot');
+                }, 1500);
+            }, 500);
+        }
+
+        function sendQuickMessage(message) {
+            addMessage(message, 'user');
+            setTimeout(() => {
+                addTypingIndicator();
+                setTimeout(() => {
+                    removeTypingIndicator();
+                    const response = generateResponse(message);
+                    addMessage(response, 'bot');
+                }, 1500);
+            }, 500);
+        }
+
+        function addMessage(text, sender) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}`;
+            messageDiv.innerHTML = `<div class="message-bubble">${text}</div>`;
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function addTypingIndicator() {
+            const typingDiv = document.createElement('div');
+            typingDiv.className = 'message bot typing-indicator-message';
+            typingDiv.id = 'typingIndicator';
+            typingDiv.innerHTML = `
+                <div class="message-bubble">
+                    <div class="typing-indicator">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            `;
+            chatMessages.appendChild(typingDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function removeTypingIndicator() {
+            const typing = document.getElementById('typingIndicator');
+            if (typing) typing.remove();
+        }
+
+        function generateResponse(message) {
+            const lowerMessage = message.toLowerCase();
+
+            if (lowerMessage.includes('pedido') || lowerMessage.includes('comprar')) {
+                return `Opa opa! 🎊 AGORA SIM, meu parceiro! Fazer pedido é comigo mesmo!
+                <br><br>
+                Olha, to vendo aqui que temos umas PROMOÇÕES SENSACIONAIS rolando hoje:
+                <br><br>
+                🍅 Extrato de Tomate 5kg por R$ 89,90 - Se levar 10, cai pra R$ 79,90 cada! É LUCRO GARANTIDO!
+                <br>
+                🥩 Tempero Premium tá com 15% OFF se combinar com nosso sal especial
+                <br>
+                🧈 Óleo de Soja: a partir de 5 caixas sai por R$ 149,90 (tá MUITO bom!)
+                <br><br>
+                Me diz, qual desses te interessa mais? Ou quer que eu monte um COMBO MATADOR pra você? 😄`;
+            }
+
+            if (lowerMessage.includes('promoç') || lowerMessage.includes('desconto') || lowerMessage.includes('oferta')) {
+                return `MEU AMIGO! 🔥 Você perguntou pra pessoa CERTA! To cheio de promoções INCRÍVEIS hoje:
+                <br><br>
+                💰 Extrato de Tomate 5kg: Leva 10+ = -11% (fica R$ 79,90/un)
+                <br>
+                💰 Combo Temperos: Tempero + Sal Especial = -15%
+                <br>
+                💰 Óleo de Soja: 5+ caixas = R$ 149,90/cx (-12%)
+                <br>
+                💰 Café Gourmet: Assinatura mensal = -20%
+                <br>
+                🚚 FRETE GRÁTIS em pedidos acima de R$ 2.000!
+                <br><br>
+                Cara, se aumentar um pouquinho seu pedido, conseguimos atingir esses descontos. Vamos fazer suas margens CRESCEREM? 📈`;
+            }
+
+            if (lowerMessage.includes('extrato') || lowerMessage.includes('tomate')) {
+                return `AH, o EXTRATO DE TOMATE! 🍅 Meu XODÓ! Deixa eu te contar um segredo, parceiro:
+                <br><br>
+                O nosso de 5kg é SENSACIONAL! Sabe por quê? Ele rende ATÉ 200 PORÇÕES, enquanto os menores rendem só umas 120. É 40% A MAIS de rendimento!
+                <br><br>
+                E dura 18 meses! Imagina a economia? Você compra menos vezes, paga frete menos vezes, e LUCRA MAIS!
+                <br><br>
+                Ah, e se levar 10 unidades, cai pra R$ 79,90 cada. Com esse preço, seu molho de pizza fica MUITO mais lucrativo! 💰
+                <br><br>
+                Bora colocar quantas unidades no seu pedido? 😊`;
+            }
+
+            if (lowerMessage.includes('ajuda') || lowerMessage.includes('dúvida')) {
+                return `Claro, meu amigo! 🤝 Tô aqui pra ISSO! Pode perguntar o que quiser:
+                <br><br>
+                ✅ Informações sobre produtos e rendimento
+                <br>
+                ✅ Dicas de como usar cada produto
+                <br>
+                ✅ Promoções e descontos disponíveis
+                <br>
+                ✅ Montar combos personalizados
+                <br>
+                ✅ Calcular quanto você precisa
+                <br>
+                ✅ Prazos de entrega e formas de pagamento
+                <br><br>
+                Sério, pode perguntar QUALQUER coisa! Conheço nosso catálogo de olhos fechados e to DOIDO pra te ajudar a lucrar mais! 💪
+                <br><br>
+                O que você gostaria de saber?`;
+            }
+
+            if (lowerMessage.includes('preço') || lowerMessage.includes('valor') || lowerMessage.includes('quanto custa')) {
+                return `Opa! 💵 Vamos falar de números, meu parceiro! Nossos MELHORES preços hoje:
+                <br><br>
+                🍅 Extrato Tomate 5kg: R$ 89,90 (10+ un: R$ 79,90)
+                <br>
+                🥩 Tempero Gourmet 2kg: R$ 124,90
+                <br>
+                🧈 Óleo Soja 20L: R$ 169,90 (5+ cx: R$ 149,90)
+                <br>
+                🍚 Arroz 30kg: R$ 189,90
+                <br>
+                ☕ Café Gourmet 10kg: R$ 279,90
+                <br>
+                🥤 Suco Concentrado 12x1L: R$ 156,90
+                <br><br>
+                Mas olha, se você combinar produtos ou aumentar as quantidades, consigo descontos MUITO melhores!
+                <br><br>
+                Me conta o que você precisa que eu monto um orçamento MATADOR pra você! 🎯`;
+            }
+
+            // Default response
+            return `Que bacana, meu parceiro! 😄
+            <br><br>
+            Olha, conheço CADA produto do nosso catálogo e to SUPER animado pra te ajudar! Seja pra montar um pedido, tirar dúvidas sobre rendimento, ou encontrar as melhores promoções - CONTA COMIGO!
+            <br><br>
+            Nossos produtos de alimentos e bebidas são TOP e vão fazer seu restaurante ARRASAR!
+            <br><br>
+            Me conta melhor o que você precisa? Posso te ajudar com:
+            <br>
+            • 🛒 Fazer um pedido completo
+            <br>
+            • 💰 Ver as promoções do dia
+            <br>
+            • 📦 Info sobre produtos específicos
+            <br>
+            • 💡 Dicas pra otimizar seus lucros
+            <br><br>
+            E aí, bora fazer negócio? 🚀`;
+        }
+
+        // Allow Enter key to send message
+        chatInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
