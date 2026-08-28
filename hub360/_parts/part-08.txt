@@ -1,0 +1,105 @@
+e a disciplina de coletar, limpar e transformar dados do canal. As categorias continuam úteis porque revelam capacidades necessárias.</p>
+          <p>O conceito Hub 360 conecta essas capacidades a partir da execução. A força de vendas é a superfície diária; a visão de parceiros e dados de canal compõe o contexto; trade e indústria definem prioridades; incentivos reforçam comportamentos; o resultado volta como evidência.</p>
+          <p>Uma base comum reduz o tempo entre detectar e agir. Também torna a experiência mais simples para quem vende: em vez de interpretar cinco sistemas, o representante recebe uma ação possível, dentro das regras e ligada ao cliente. Nos bastidores, cada disciplina continua fazendo seu trabalho — agora com uma linguagem compartilhada.</p>
+
+          <section class="sources"><h2>Leituras e fontes</h2><ul>
+            <li><a href="https://www.salesforce.com/sales/partner-relationship-management/what-is-prm/" target="_blank" rel="noopener">Salesforce — What is Partner Relationship Management?</a></li>
+            <li><a href="https://www.salesforce.com/in/sales/channel-revenue-management/" target="_blank" rel="noopener">Salesforce — Channel Revenue Management</a></li>
+            <li><a href="https://www.oracle.com/br/cx/sales/sales-force-automation/what-is-sfa/" target="_blank" rel="noopener">Oracle — O que é SFA?</a></li>
+            <li><a href="https://www.modeln.com/wp-content/uploads/2019/01/ebk_best_practices_for_channel_data_management.pdf" target="_blank" rel="noopener">Model N — Channel Data Management</a></li>
+          </ul></section>`
+      },
+      {
+        n:10,
+        slug:'implantar-operacao-360-sem-dados-perfeitos',
+        category:'Arquitetura 360',
+        read:10,
+        keywords:'implantação Hub 360 canal indireto SFA sell-out dados maturidade piloto adoção força de vendas roadmap',
+        title:'Como implantar uma operação 360 no canal indireto sem esperar dados perfeitos',
+        dek:'A implantação avança melhor por ciclos de decisão: uma prioridade, um recorte de canal, uma ação no campo e um retorno mensurável. A cobertura cresce sobre uma base testada.',
+        body:`
+          <p>Uma visão 360 pode paralisar quando vira uma lista de pré-requisitos absolutos: cadastro integral, sell-out diário, integração com todos os distribuidores, modelos preditivos maduros e processos idênticos. Poucas operações começam assim. O caminho viável escolhe uma decisão relevante e melhora o circuito ao redor dela.</p>
+
+          <h2>Defina o primeiro problema em linguagem operacional</h2>
+          <p>“Ter visibilidade do canal” é amplo demais para orientar uma implantação. “Reduzir a perda de recompra dos vinte principais SKUs em três distribuidores” já permite escolher dados, público, ação e medida. Outros bons pontos de partida são ampliar distribuição de um lançamento, recuperar clientes inativos ou melhorar giro de estoque em uma região.</p>
+          <p>O recorte deve ter valor perceptível e complexidade controlada. Um produto com volume suficiente para aprender, uma equipe disposta a participar e dados minimamente acessíveis costuma ser melhor que uma iniciativa nacional com muitas exceções.</p>
+
+          <h2>Construa o mínimo confiável</h2>
+          <p>O primeiro ciclo precisa de identidade de produto e cliente, histórico essencial, estoque ou disponibilidade, carteira do vendedor e evento de resultado. Nem todos os campos terão a mesma qualidade. O sistema deve registrar cobertura e latência para que a decisão respeite essa incerteza.</p>
+          <p>Regras simples são adequadas no início. Um alerta de intervalo de recompra pode combinar média histórica, estoque e agenda. Uma oportunidade de mix pode usar pares de clientes e política comercial. O valor vem da ligação entre sinal e execução; complexidade algorítmica pode crescer depois.</p>
+          <p>As práticas de channel data management recomendam coletar no formato disponível, limpar, mapear e usar o dado continuamente. Isso favorece uma esteira que aprende com exceções, em vez de um projeto que aguarda padronização total para começar.</p>
+
+          <div class="callout">O primeiro produto da implantação é um ciclo completo e observável: detectar, recomendar, executar, registrar e aprender.</div>
+
+          <h2>Coloque a ação no fluxo do vendedor</h2>
+          <p>O piloto precisa chegar ao ambiente que a equipe já utiliza. Agenda, ficha do cliente, catálogo e pedido formam os pontos naturais. Uma lista em painel separado serve para análise, mas tende a perder força na rua.</p>
+          <p>A recomendação deve ser breve, explicar o motivo e permitir resposta. Treinamento funciona melhor com situações da própria carteira: como interpretar, quando adaptar e como registrar objeção. O gestor acompanha poucas medidas de uso e conversa sobre qualidade, em vez de cobrar cliques.</p>
+          <p>A base SFA oferece vantagem porque já reúne regras de preço, estoque, crédito, histórico e transação. A implantação da inteligência aproveita esse contexto e evita reconstruir a operação em outra superfície.</p>
+
+          <h2>Meça quatro dimensões desde o piloto</h2>
+          <p><strong>Qualidade do dado:</strong> cobertura, latência, correspondência e reconciliação. <strong>Adoção:</strong> recomendações vistas, tratadas e motivos de recusa. <strong>Efeito comercial:</strong> conversão, incremento de mix, margem e recompra. <strong>Efeito operacional:</strong> tempo de preparação, volume de alertas e estabilidade da integração.</p>
+          <p>O conjunto evita conclusões apressadas. Conversão baixa pode vir de público ruim, falta de estoque ou mensagem confusa. Adoção alta pode coexistir com pouco incremento se as recomendações apenas confirmam o óbvio. O diagnóstico aponta qual parte do circuito merece ajuste.</p>
+
+          <h2>Expanda por ondas, não por cópia</h2>
+          <p>Após dois ou três ciclos estáveis, a operação pode adicionar distribuidores, categorias ou casos de uso. Cada expansão testa novas diferenças de cadastro, processo e política. A arquitetura preserva um núcleo comum e permite parâmetros locais.</p>
+          <p>Uma sequência frequente passa por cinco ondas:</p>
+          <ol>
+            <li>base transacional e identidade mínima;</li>
+            <li>alertas e regras explicáveis;</li>
+            <li>campanhas e missões segmentadas;</li>
+            <li>probabilidade, score e otimização;</li>
+            <li>agentes com autonomia delimitada e aprovação.</li>
+          </ol>
+          <p>A passagem de uma onda para outra depende de evidência, não de calendário. Dados estáveis, uso recorrente e impacto compreendido criam a condição para ampliar automação.</p>
+
+          <h2>Faça da implantação uma capacidade contínua</h2>
+          <p>Novos parceiros, produtos e regras manterão a operação em movimento. Por isso, o time precisa de responsáveis pelo dado, pela decisão comercial, pela experiência do vendedor e pela medição. Um fórum curto trata exceções e prioriza melhorias; ciclos maiores revisam objetivos e investimento.</p>
+          <p>O Hub 360 organiza essa evolução ao redor de um circuito único. A WMW já posiciona sua força de vendas como conexão entre ERP, equipe, cliente e gestão. A visão 360 acrescenta prioridades de indústria, leitura de canal e aprendizagem. Começar pequeno não reduz a ambição. Torna possível provar o mecanismo que sustentará a escala.</p>
+
+          <section class="sources"><h2>Leituras e fontes</h2><ul>
+            <li><a href="https://www.modeln.com/wp-content/uploads/2019/01/ebk_best_practices_for_channel_data_management.pdf" target="_blank" rel="noopener">Model N — Best Practices for Channel Data Management</a></li>
+            <li><a href="https://www.wmw.com.br/solucao/forca-de-vendas/" target="_blank" rel="noopener">WMW Systems — Força de vendas integrada ao ERP e ao campo</a></li>
+            <li><a href="https://www.oracle.com/br/cx/sales/sales-force-automation/what-is-sfa/" target="_blank" rel="noopener">Oracle — Automação da força de vendas e adoção</a></li>
+          </ul></section>`
+      },
+    ];
+
+    const articleList = document.querySelector('#articleList');
+    const railItems = document.querySelector('#railItems');
+    const filtersEl = document.querySelector('#filters');
+    const searchInput = document.querySelector('#searchInput');
+    let activeCategory = 'Todos';
+
+    const norm = value => value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+    const categories = ['Todos', ...new Set(articles.map(a => a.category))];
+
+    function renderRail(){
+      railItems.innerHTML = articles.map(a => `<li><button class="rail-link" data-open="${a.slug}"><span class="rail-num">${String(a.n).padStart(2,'0')}</span><span class="rail-title">${a.title}</span></button></li>`).join('');
+    }
+    function renderFilters(){
+      filtersEl.innerHTML = categories.map(c => `<button class="filter ${c===activeCategory?'active':''}" data-category="${c}">${c}</button>`).join('');
+    }
+    function renderList(){
+      const query = norm(searchInput.value.trim());
+      const visible = articles.filter(a => {
+        const searchable = [a.title,a.dek,a.category,a.keywords,a.body.replace(/<[^>]+>/g,' ')].join(' ');
+        return (activeCategory==='Todos'||a.category===activeCategory) && (!query || norm(searchable).includes(query));
+      });
+      if(!visible.length){articleList.innerHTML='<div class="empty">Nenhuma análise encontrada. Experimente outro termo ou remova o filtro.</div>';return}
+      articleList.innerHTML = visible.map((a,i) => `<a class="story ${a.n===1&&!query&&activeCategory==='Todos'?'featured':''}" href="#artigo/${a.slug}" data-open="${a.slug}">
+        <span class="story-num">${String(a.n).padStart(2,'0')}</span>
+        <div class="story-main"><span class="meta">${a.category} · ${a.read} min</span><h3>${a.title}</h3></div>
+        <p class="story-summary">${a.dek}</p><span class="story-arrow">→</span></a>`).join('');
+    }
+    function slugifyHeading(text){return norm(text).replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'')}
+    function openArticle(slug){
+      const a = articles.find(item => item.slug===slug); if(!a) return;
+      document.body.classList.add('reading');
+      document.querySelector('#readerMeta').textContent = `${a.category} · ${a.read} min de leitura`;
+      document.querySelector('#readerTitle').textContent = a.title;
+      document.querySelector('#readerDek').textContent = a.dek;
+      const body = document.querySelector('#articleBody'); body.innerHTML = a.body;
+      const headings = [...body.querySelectorAll('h2:not(.sources h2)')];
+      headings.forEach((h,i)=>{h.id=`${String(i+1).padStart(2,'0')}-${slugifyHeading(h.textContent)}`});
+      document.querySelector('#tocList').innerHTML = headings.map(h=>`<li><a href="#${h.id}">${h.textContent}</a></li>`).join('');
+      const related = articles.filter(item=>item.slug!==slug).sort((x,y)=>(y.category===a.category)-(x.category===a.category)).s
